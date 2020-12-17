@@ -1,0 +1,640 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local MessageHolder = Instance.new("ScrollingFrame")
+local Placeholder = Instance.new("Frame")
+local Username = Instance.new("TextLabel")
+local Message = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local Minimize = Instance.new("TextButton")
+local image = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Message_2 = Instance.new("TextBox")
+local image_2 = Instance.new("ImageLabel")
+local Length = Instance.new("TextLabel")
+local Status = Instance.new("TextLabel")
+local Settings = Instance.new("TextButton")
+local Send_Roundify_2px = Instance.new("ImageLabel")
+local Send = Instance.new("TextButton")
+local Send_Roundify_2px_2 = Instance.new("ImageLabel")
+local Open = Instance.new("TextButton")
+local image_3 = Instance.new("ImageLabel")
+local Settings_2 = Instance.new("Frame")
+local RainbowTxt = Instance.new("TextLabel")
+local RainbowButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Back = Instance.new("TextButton")
+local Send_Roundify_2px_3 = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame.Position = UDim2.new(0.169346198, 0, 0.285953164, 0)
+Frame.Size = UDim2.new(0, 616, 0, 363)
+Frame.Visible = false
+
+MessageHolder.Name = "MessageHolder"
+MessageHolder.Parent = Frame
+MessageHolder.Active = true
+MessageHolder.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+MessageHolder.BorderColor3 = Color3.fromRGB(43, 43, 43)
+MessageHolder.BorderSizePixel = 0
+MessageHolder.Position = UDim2.new(0.0393659435, 0, 0.187350199, 0)
+MessageHolder.Size = UDim2.new(0, 567, 0, 198)
+MessageHolder.ScrollBarThickness = 1
+
+Placeholder.Name = "Placeholder"
+Placeholder.Parent = MessageHolder
+Placeholder.BackgroundColor3 = Color3.fromRGB(11, 11, 11)
+Placeholder.BackgroundTransparency = 0.900
+Placeholder.Position = UDim2.new(0, 0, 0.87062937, 0)
+Placeholder.Size = UDim2.new(1, 0, 0, 37)
+Placeholder.Visible = false
+
+Username.Name = "Username"
+Username.Parent = Placeholder
+Username.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Username.BackgroundTransparency = 0.900
+Username.Size = UDim2.new(0.31407094, 0, 1, 0)
+Username.Font = Enum.Font.Cartoon
+Username.Text = "[username]:"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextScaled = true
+Username.TextSize = 20.000
+Username.TextWrapped = true
+
+Message.Name = "Message"
+Message.Parent = Placeholder
+Message.Active = true
+Message.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Message.BackgroundTransparency = 0.900
+Message.Position = UDim2.new(0.32465294, 0, 0, 0)
+Message.Size = UDim2.new(0.675347149, 0, 1, 0)
+Message.Font = Enum.Font.Cartoon
+Message.Text = "this is my message"
+Message.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message.TextSize = 18.000
+Message.TextWrapped = true
+Message.TextXAlignment = Enum.TextXAlignment.Left
+
+UIListLayout.Parent = MessageHolder
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Frame
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.879154086, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 74, 0, 41)
+Minimize.ZIndex = 4
+Minimize.Font = Enum.Font.ArialBold
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextScaled = true
+Minimize.TextSize = 14.000
+Minimize.TextWrapped = true
+
+image.Name = "image"
+image.Parent = Minimize
+image.Active = true
+image.AnchorPoint = Vector2.new(0.5, 0.5)
+image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+image.BackgroundTransparency = 1.000
+image.Position = UDim2.new(0.5, 0, 0.5, 0)
+image.Selectable = true
+image.Size = UDim2.new(1, 0, 1, 0)
+image.ZIndex = 3
+image.Image = "rbxassetid://3570695787"
+image.ImageColor3 = Color3.fromRGB(40, 40, 40)
+image.ScaleType = Enum.ScaleType.Slice
+image.SliceCenter = Rect.new(100, 100, 100, 100)
+image.SliceScale = 0.090
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 616, 0, 47)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "Exo Chat"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Message_2.Name = "Message"
+Message_2.Parent = Frame
+Message_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Message_2.BackgroundTransparency = 1.000
+Message_2.BorderSizePixel = 0
+Message_2.Position = UDim2.new(0.0410557538, 0, 0.818593025, 0)
+Message_2.Size = UDim2.new(0, 488, 0, 62)
+Message_2.ZIndex = 5
+Message_2.Font = Enum.Font.Cartoon
+Message_2.PlaceholderText = "Press \\ to focus, or click here to focus."
+Message_2.Text = ""
+Message_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message_2.TextSize = 20.000
+Message_2.TextWrapped = true
+Message_2.TextXAlignment = Enum.TextXAlignment.Left
+Message_2.TextYAlignment = Enum.TextYAlignment.Top
+
+image_2.Name = "image"
+image_2.Parent = Message_2
+image_2.Active = true
+image_2.AnchorPoint = Vector2.new(0.5, 0.5)
+image_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+image_2.BackgroundTransparency = 1.000
+image_2.Position = UDim2.new(0.494662166, 0, 0.395161301, 0)
+image_2.Selectable = true
+image_2.Size = UDim2.new(0.993590355, 0, 0.983870327, 0)
+image_2.Image = "rbxassetid://3570695787"
+image_2.ImageColor3 = Color3.fromRGB(39, 39, 39)
+image_2.ScaleType = Enum.ScaleType.Slice
+image_2.SliceCenter = Rect.new(100, 100, 100, 100)
+image_2.SliceScale = 0.060
+
+Length.Name = "Length"
+Length.Parent = Message_2
+Length.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Length.BackgroundTransparency = 1.000
+Length.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Length.Position = UDim2.new(0.850243449, 0, 0.5, 0)
+Length.Size = UDim2.new(0, 68, 0, 24)
+Length.ZIndex = 5
+Length.Font = Enum.Font.ArialBold
+Length.Text = "0/80"
+Length.TextColor3 = Color3.fromRGB(100, 100, 100)
+Length.TextSize = 20.000
+Length.TextTransparency = 0.100
+
+Status.Name = "Status"
+Status.Parent = Frame
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.Position = UDim2.new(0.328453958, 0, 0.133119926, 0)
+Status.Size = UDim2.new(0, 214, 0, 18)
+Status.Font = Enum.Font.SourceSans
+Status.Text = "Websocket: Online"
+Status.TextColor3 = Color3.fromRGB(0, 255, 0)
+Status.TextSize = 14.000
+
+Settings.Name = "Settings"
+Settings.Parent = Frame
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.846078932, 0, 0.764124751, 0)
+Settings.Size = UDim2.new(0, 88, 0, 36)
+Settings.ZIndex = 2
+Settings.Font = Enum.Font.ArialBold
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 24.000
+Settings.TextWrapped = true
+
+Send_Roundify_2px.Name = "Send_Roundify_2px"
+Send_Roundify_2px.Parent = Settings
+Send_Roundify_2px.Active = true
+Send_Roundify_2px.AnchorPoint = Vector2.new(0.5, 0.5)
+Send_Roundify_2px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send_Roundify_2px.BackgroundTransparency = 1.000
+Send_Roundify_2px.Position = UDim2.new(0.5, 0, 0.5, 0)
+Send_Roundify_2px.Selectable = true
+Send_Roundify_2px.Size = UDim2.new(1, 0, 1, 0)
+Send_Roundify_2px.Image = "rbxassetid://3570695787"
+Send_Roundify_2px.ImageColor3 = Color3.fromRGB(0, 0, 191)
+Send_Roundify_2px.ScaleType = Enum.ScaleType.Slice
+Send_Roundify_2px.SliceCenter = Rect.new(100, 100, 100, 100)
+Send_Roundify_2px.SliceScale = 0.090
+
+Send.Name = "Send"
+Send.Parent = Frame
+Send.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send.BackgroundTransparency = 1.000
+Send.BorderSizePixel = 0
+Send.Position = UDim2.new(0.846078932, 0, 0.885336876, 0)
+Send.Size = UDim2.new(0, 88, 0, 36)
+Send.ZIndex = 2
+Send.Font = Enum.Font.ArialBold
+Send.Text = "Send"
+Send.TextColor3 = Color3.fromRGB(255, 255, 255)
+Send.TextSize = 29.000
+Send.TextWrapped = true
+
+Send_Roundify_2px_2.Name = "Send_Roundify_2px"
+Send_Roundify_2px_2.Parent = Send
+Send_Roundify_2px_2.Active = true
+Send_Roundify_2px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Send_Roundify_2px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send_Roundify_2px_2.BackgroundTransparency = 1.000
+Send_Roundify_2px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Send_Roundify_2px_2.Selectable = true
+Send_Roundify_2px_2.Size = UDim2.new(1, 0, 1, 0)
+Send_Roundify_2px_2.Image = "rbxassetid://3570695787"
+Send_Roundify_2px_2.ImageColor3 = Color3.fromRGB(0, 0, 191)
+Send_Roundify_2px_2.ScaleType = Enum.ScaleType.Slice
+Send_Roundify_2px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Send_Roundify_2px_2.SliceScale = 0.090
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(-1.5, 0, 1.5, 0)
+Open.Size = UDim2.new(0, 88, 0, 55)
+Open.ZIndex = 2
+Open.Font = Enum.Font.ArialBold
+Open.Text = "+"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+image_3.Name = "image"
+image_3.Parent = Open
+image_3.Active = true
+image_3.AnchorPoint = Vector2.new(0.5, 0.5)
+image_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+image_3.BackgroundTransparency = 1.000
+image_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+image_3.Selectable = true
+image_3.Size = UDim2.new(1, 0, 1, 0)
+image_3.Image = "rbxassetid://3570695787"
+image_3.ImageColor3 = Color3.fromRGB(42, 42, 42)
+image_3.ScaleType = Enum.ScaleType.Slice
+image_3.SliceCenter = Rect.new(100, 100, 100, 100)
+image_3.SliceScale = 0.090
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = ScreenGui
+Settings_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Settings_2.BorderSizePixel = 0
+Settings_2.Position = UDim2.new(0.246717542, 0, 0.272284269, 0)
+Settings_2.Size = UDim2.new(0, 616, 0, 363)
+
+RainbowTxt.Name = "RainbowTxt"
+RainbowTxt.Parent = Settings_2
+RainbowTxt.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+RainbowTxt.BorderColor3 = Color3.fromRGB(30, 30, 30)
+RainbowTxt.BorderSizePixel = 0
+RainbowTxt.Position = UDim2.new(0.0729586706, 0, 0.370242417, 0)
+RainbowTxt.Size = UDim2.new(0, 200, 0, 50)
+RainbowTxt.Font = Enum.Font.SourceSans
+RainbowTxt.Text = "Rainbow Text"
+RainbowTxt.TextColor3 = Color3.fromRGB(255, 255, 255)
+RainbowTxt.TextScaled = true
+RainbowTxt.TextSize = 14.000
+RainbowTxt.TextWrapped = true
+
+RainbowButton.Name = "RainbowButton"
+RainbowButton.Parent = Settings_2
+RainbowButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+RainbowButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
+RainbowButton.BorderSizePixel = 0
+RainbowButton.Position = UDim2.new(0.0729586706, 0, 0.190317571, 0)
+RainbowButton.Size = UDim2.new(0, 200, 0, 50)
+RainbowButton.Font = Enum.Font.SourceSans
+RainbowButton.Text = "Enabled"
+RainbowButton.TextColor3 = Color3.fromRGB(0, 255, 0)
+RainbowButton.TextSize = 40.000
+RainbowButton.TextStrokeColor3 = Color3.fromRGB(0, 255, 93)
+
+TextLabel_2.Parent = Settings_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 616, 0, 47)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "Exo Chat Settings"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Back.Name = "Back"
+Back.Parent = Settings_2
+Back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Back.BackgroundTransparency = 1.000
+Back.BorderSizePixel = 0
+Back.Position = UDim2.new(0.0100399861, 0, 0.866053104, 0)
+Back.Size = UDim2.new(0, 603, 0, 41)
+Back.ZIndex = 2
+Back.Font = Enum.Font.ArialBold
+Back.Text = "Back"
+Back.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back.TextSize = 29.000
+Back.TextWrapped = true
+
+Send_Roundify_2px_3.Name = "Send_Roundify_2px"
+Send_Roundify_2px_3.Parent = Back
+Send_Roundify_2px_3.Active = true
+Send_Roundify_2px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Send_Roundify_2px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send_Roundify_2px_3.BackgroundTransparency = 1.000
+Send_Roundify_2px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Send_Roundify_2px_3.Selectable = true
+Send_Roundify_2px_3.Size = UDim2.new(1, 0, 1, 0)
+Send_Roundify_2px_3.Image = "rbxassetid://3570695787"
+Send_Roundify_2px_3.ImageColor3 = Color3.fromRGB(0, 0, 191)
+Send_Roundify_2px_3.ScaleType = Enum.ScaleType.Slice
+Send_Roundify_2px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Send_Roundify_2px_3.SliceScale = 0.090
+
+-- Scripts:
+
+local function OMKXR_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	
+	if settings then
+		Roles = settings.Roles
+	end
+	local Lenglthcd = string.len(Roles)
+	if Lenglthcd > 7 then
+		print("Your actually retarded your role is more than 7 Characters bud")
+		ScreenGui:Destroy()
+		return end
+	local a=[[
+	I'll never understand skidders :>
+	]]print(a)if not syn_checkcaller and not PROTOSMASHER_LOADED then error'Unsupported exploit!'end;local b="ws://sadasdsad.momowhaley.repl.co"
+	
+	local socket;
+	if syn_checkcaller then
+		socket = syn.websocket.connect(b)
+	elseif PROTOSMASHER_LOADED then
+		socket = WebSocket.new(b)
+		socket:ConnectToServer()
+	end
+	
+	local username = game.Players.LocalPlayer.Name
+		local Message = script.Parent.Message
+	
+		local json_encode = function(tbl)
+			local json = game:GetService("HttpService"):JSONEncode(tbl)
+			return json
+		end
+		local json_decode = function(json)
+			local tbl = game:GetService("HttpService"):JSONDecode(json)
+			return tbl
+		end
+	
+	function newMessage(data)
+		local user = data.Username
+		local msg = data.Message
+		local placeholder = script.Parent.MessageHolder.Placeholder:Clone()
+		placeholder.Name = user
+		placeholder.Parent = script.Parent.MessageHolder
+		placeholder.Username.Text = user
+		placeholder.Message.Text = msg
+		placeholder.Visible = true
+	end
+	
+		if not _G.client then
+			_G.client = socket
+			_G.client:Send(json_encode({
+				['Action'] = 'Connected',
+				['Username'] = username,
+			}))
+			_G.client.OnMessage:Connect(function(msg)
+				local data = json_decode(msg)
+	
+				if data['Action'] == 'New User' then
+					newMessage({
+						['Username'] = data['Username'],
+						['Message'] = 'has joined the chat!';
+					});
+					return;
+				end
+				newMessage(data);
+			end)
+	end
+	
+		function sendMessage(msg)
+			local newmsg = {
+			['Username'] = '['..Roles..'] [' .. username .. ']:',
+				['Message'] = Message.Text
+			}	
+			newmsg = json_encode(newmsg)
+		_G.client:Send(newmsg)
+		end
+	
+	
+		script.Parent.Minimize.MouseButton1Click:Connect(function()
+		script.Parent:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'In', 'Linear', 0.5, true)
+			script.Parent.Parent.Open:TweenPosition(UDim2.new(-0.006, 0,0.947, 0), 'In', 'Linear', 0.5, true)
+		end)
+		script.Parent.Parent.Open.MouseButton1Click:Connect(function()
+		script.Parent:TweenPosition(UDim2.new(0.5,0,0.5,0), 'Out', 'Linear', 0.5, true)
+			script.Parent.Parent.Open:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'Out', 'Linear', 0.5, true)
+		end)
+	
+	
+		local opened = true;
+	
+	
+		game:GetService('UserInputService').InputBegan:Connect(function(key, gpe)
+			if gpe then return end
+	
+			if key.KeyCode == Enum.KeyCode.BackSlash then
+				Message:CaptureFocus()
+				wait()
+				Message.Text = ''
+			elseif key.KeyCode == Enum.KeyCode.Insert then
+				opened = not opened
+	
+				if opened then
+					script.Parent.Parent:TweenPosition(UDim2.new(0.5,0,0.5,0), 'Out', 'Linear', 0.5, true)
+					script.Parent.Parent.Open:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'Out', 'Linear', 0.5, true)
+				else
+					script.Parent.Parent:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'In', 'Linear', 0.5, true)
+					script.Parent.Parent.Open:TweenPosition(UDim2.new(-0.006, 0,0.947, 0), 'In', 'Linear', 0.5, true)
+				end
+			end
+	end)
+	
+			local debounce = false;
+			local Commands = {
+		['.help'] = function()
+			print("WIP")
+		end}
+	
+		function send()
+			if debounce then return end;
+			if #Message.Text < 1 then 
+				return 
+			elseif #Message.Text > 80 then
+				Message.Text = 'Message is too long.'
+				debounce = true;
+				delay(1.5, function()
+					Message.Text = ''
+					debounce = false;
+				end)
+				return 
+			end;
+			sendMessage()
+	
+			if Commands[Message.Text] then
+				Commands[Message.Text]()
+			end
+	
+			Message.Text = ''
+	
+			debounce = true;
+			delay(1.5, function()
+				debounce = false;
+			end)
+		end
+	
+		Message.FocusLost:Connect(function(enter)
+			if not enter then return end;
+			send()
+		end)
+	
+		Message.Changed:Connect(function()
+		if #Message.Text > 80 then
+			Message.Text = Message.Text:sub(1,80)
+			else
+	
+				local len = #Message.Text
+			Message.Length.Text = tostring(len) .. '/80'
+	
+				if len > 50 and len < 60 then
+					Message.Length.TextColor3 = Color3.fromRGB(235, 186, 52)
+				elseif len > 60 and len < 70 then
+					Message.Length.TextColor3 = Color3.fromRGB(235, 186, 52)
+				elseif len > 70 and len <= 80 then
+					Message.Length.TextColor3 = Color3.fromRGB(235, 0, 0)
+				else
+					Message.Length.TextColor3 = Color3.fromRGB(255, 255, 255)
+				end
+			end
+		end)
+	
+		script.Parent.Send.MouseButton1Click:Connect(function()
+			send()
+		end)
+	
+		--//Minimize Color
+		script.Parent.Minimize.MouseEnter:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Minimize.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(35,35,35)}):Play()
+		end)
+		script.Parent.Minimize.MouseLeave:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Minimize.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(40,40,40)}):Play()
+		end)
+	
+	
+		--//Message Box Color
+		script.Parent.Message.MouseEnter:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Message.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(34,34,34)}):Play()
+		end)
+		script.Parent.Message.Focused:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Message.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(31,31,31)}):Play()
+		end)
+		script.Parent.Message.FocusLost:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Message.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(39, 39, 39)}):Play()
+	end)	
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+	
+	script.Parent.Settings.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false;
+		script.Parent.Parent.Settings.Visible = true;
+	end)
+end
+coroutine.wrap(OMKXR_fake_script)()
+local function QPPCBLU_fake_script() -- RainbowTxt.Rainbower 
+	local script = Instance.new('LocalScript', RainbowTxt)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(QPPCBLU_fake_script)()
+local function ATJABXL_fake_script() -- Settings_2.AnotherHandler 
+	local script = Instance.new('Script', Settings_2)
+
+	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
+		
+	end)
+	
+	script.Parent.Back.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.Frame.Visible = true
+	end)
+end
+coroutine.wrap(ATJABXL_fake_script)()
