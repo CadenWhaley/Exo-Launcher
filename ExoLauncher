@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function OMKXR_fake_script() -- Frame.LocalScript 
+local function WQNVEV_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -519,6 +519,8 @@ local function OMKXR_fake_script() -- Frame.LocalScript
 				else
 					Message.Length.TextColor3 = Color3.fromRGB(255, 255, 255)
 				end
+	
+	
 			end
 		end)
 	
@@ -592,8 +594,8 @@ local function OMKXR_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(OMKXR_fake_script)()
-local function QPPCBLU_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(WQNVEV_fake_script)()
+local function DJQTL_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -624,12 +626,20 @@ local function QPPCBLU_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(QPPCBLU_fake_script)()
-local function ATJABXL_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(DJQTL_fake_script)()
+local function EAYOG_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
-		
+		if script.Parent.RainbowButton.Text == "Enabled" then
+			script.Parent.RainbowButton.Text = "Disabled"
+			script.Parent.RainbowButton.TextColor3 = Color3.new(255, 0, 0)
+		else
+			if script.Parent.RainbowButton.Text == "Disabled" then
+				script.Parent.RainbowButton.Text = "Enabled" 
+				script.Parent.RainbowButton.TextColor3 = Color3.new(0, 255, 0)
+			end
+		end
 	end)
 	
 	script.Parent.Back.MouseButton1Click:Connect(function()
@@ -637,4 +647,4 @@ local function ATJABXL_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(ATJABXL_fake_script)()
+coroutine.wrap(EAYOG_fake_script)()
