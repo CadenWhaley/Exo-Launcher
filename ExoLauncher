@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function LRJPP_fake_script() -- Frame.LocalScript 
+local function GSWY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -380,7 +380,7 @@ local function LRJPP_fake_script() -- Frame.LocalScript
 	╚══════╝╚═╝░░╚═╝░╚════╝░  ╚══════╝╚═╝░░╚═╝░╚═════╝░╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
 	
 	]])
-	
+	rconsolename("Exo Launcher Console")
 	rconsoleprint('@@BLUE@@')
 	rconsoleprint(Text)
 	rconsoleinfo("Loading Websocket...")
@@ -612,8 +612,8 @@ local function LRJPP_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(LRJPP_fake_script)()
-local function TRVGDP_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(GSWY_fake_script)()
+local function ADJTX_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -644,8 +644,8 @@ local function TRVGDP_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(TRVGDP_fake_script)()
-local function HRLZ_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(ADJTX_fake_script)()
+local function JVOX_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
@@ -665,4 +665,4 @@ local function HRLZ_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(HRLZ_fake_script)()
+coroutine.wrap(JVOX_fake_script)()
