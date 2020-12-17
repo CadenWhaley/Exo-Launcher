@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function HTQC_fake_script() -- Frame.LocalScript 
+local function OMQOVM_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -372,11 +372,12 @@ local function HTQC_fake_script() -- Frame.LocalScript
 	--Console Setup
 	local Text = [[
 	
-	
-	█████████████████████████████████████████████████████████████████████
-	█▄─▄▄─█▄─▀─▄█─▄▄─███▄─▄████▀▄─██▄─██─▄█▄─▀█▄─▄█─▄▄▄─█─█─█▄─▄▄─█▄─▄▄▀█
-	██─▄█▀██▀─▀██─██─████─██▀██─▀─███─██─███─█▄▀─██─███▀█─▄─██─▄█▀██─▄─▄█
-	▀▄▄▄▄▄▀▄▄█▄▄▀▄▄▄▄▀▀▀▄▄▄▄▄▀▄▄▀▄▄▀▀▄▄▄▄▀▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▄▀▄▀▄▄▄▄▄▀▄▄▀▄▄▀
+	███████╗██╗░░██╗░█████╗░  ██╗░░░░░░█████╗░██╗░░░██╗███╗░░██╗░█████╗░██╗░░██╗███████╗██████╗░
+	██╔════╝╚██╗██╔╝██╔══██╗  ██║░░░░░██╔══██╗██║░░░██║████╗░██║██╔══██╗██║░░██║██╔════╝██╔══██╗
+	█████╗░░░╚███╔╝░██║░░██║  ██║░░░░░███████║██║░░░██║██╔██╗██║██║░░╚═╝███████║█████╗░░██████╔╝
+	██╔══╝░░░██╔██╗░██║░░██║  ██║░░░░░██╔══██║██║░░░██║██║╚████║██║░░██╗██╔══██║██╔══╝░░██╔══██╗
+	███████╗██╔╝╚██╗╚█████╔╝  ███████╗██║░░██║╚██████╔╝██║░╚███║╚█████╔╝██║░░██║███████╗██║░░██║
+	╚══════╝╚═╝░░╚═╝░╚════╝░  ╚══════╝╚═╝░░╚═╝░╚═════╝░╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
 	
 	]]
 	rconsolename("Exo Launcher Console")
@@ -611,8 +612,8 @@ local function HTQC_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(HTQC_fake_script)()
-local function YXETW_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(OMQOVM_fake_script)()
+local function EEQWUD_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -643,8 +644,8 @@ local function YXETW_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(YXETW_fake_script)()
-local function AGGSIRR_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(EEQWUD_fake_script)()
+local function QNEXMA_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
@@ -664,4 +665,4 @@ local function AGGSIRR_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(AGGSIRR_fake_script)()
+coroutine.wrap(QNEXMA_fake_script)()
