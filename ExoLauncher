@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function QNTRC_fake_script() -- Frame.LocalScript 
+local function AMDTWY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -375,10 +375,10 @@ local function QNTRC_fake_script() -- Frame.LocalScript
 	rconsoleprint("Welcome to da Exo Launcher Console!")
 	wait(.1)
 	rconsoleprint('@@YELLOW@@')
-	rconsoleinfo("Loading Websocket...")
+	rconsoleprint("Loading Websocket...")
 	wait(.1)
 	rconsoleprint('@@GRREN@@')
-	rconsoleinfo("Loaded! (Hopefully)")
+	rconsoleprint("Loaded! (Hopefully)")
 	wait(.3)
 	--Actual MainStuff
 	local socket;
@@ -536,7 +536,6 @@ local function QNTRC_fake_script() -- Frame.LocalScript
 		end)
 	
 	script.Parent.Send.MouseButton1Click:Connect(function()
-			script.Parent.Message.Text = ''
 			send()
 		end)
 	
@@ -605,16 +604,9 @@ local function QNTRC_fake_script() -- Frame.LocalScript
 		script.Parent.Visible = false;
 		script.Parent.Parent.Settings.Visible = true;
 	end)
-	
-	
-	local fakelife = script.Parent.Message
-	
-	fakelife:GetPropertyChangedSignal("Text"):Connect(function ()
-		fakelife = fakelife.Text
-	end)
 end
-coroutine.wrap(QNTRC_fake_script)()
-local function WWGI_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(AMDTWY_fake_script)()
+local function XUQIDB_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -645,8 +637,8 @@ local function WWGI_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(WWGI_fake_script)()
-local function PBCHV_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(XUQIDB_fake_script)()
+local function XGIPKMO_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
@@ -666,4 +658,4 @@ local function PBCHV_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(PBCHV_fake_script)()
+coroutine.wrap(XGIPKMO_fake_script)()
