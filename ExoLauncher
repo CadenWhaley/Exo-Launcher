@@ -39,7 +39,6 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Frame.Position = UDim2.new(0.169346198, 0, 0.285953164, 0)
 Frame.Size = UDim2.new(0, 616, 0, 363)
-Frame.Visible = false
 
 MessageHolder.Name = "MessageHolder"
 MessageHolder.Parent = Frame
@@ -283,14 +282,15 @@ Settings_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Settings_2.BorderSizePixel = 0
 Settings_2.Position = UDim2.new(0.246717542, 0, 0.272284269, 0)
 Settings_2.Size = UDim2.new(0, 616, 0, 363)
+Settings_2.Visible = false
 
 RainbowTxt.Name = "RainbowTxt"
 RainbowTxt.Parent = Settings_2
 RainbowTxt.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 RainbowTxt.BorderColor3 = Color3.fromRGB(30, 30, 30)
 RainbowTxt.BorderSizePixel = 0
-RainbowTxt.Position = UDim2.new(0.0729586706, 0, 0.370242417, 0)
-RainbowTxt.Size = UDim2.new(0, 200, 0, 50)
+RainbowTxt.Position = UDim2.new(0.0599716492, 0, 0.342425466, 0)
+RainbowTxt.Size = UDim2.new(0, 187, 0, 46)
 RainbowTxt.Font = Enum.Font.SourceSans
 RainbowTxt.Text = "Rainbow Text"
 RainbowTxt.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -303,8 +303,8 @@ RainbowButton.Parent = Settings_2
 RainbowButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 RainbowButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
 RainbowButton.BorderSizePixel = 0
-RainbowButton.Position = UDim2.new(0.0729586706, 0, 0.190317571, 0)
-RainbowButton.Size = UDim2.new(0, 200, 0, 50)
+RainbowButton.Position = UDim2.new(0.0599716492, 0, 0.176543429, 0)
+RainbowButton.Size = UDim2.new(0, 187, 0, 46)
 RainbowButton.Font = Enum.Font.SourceSans
 RainbowButton.Text = "Enabled"
 RainbowButton.TextColor3 = Color3.fromRGB(0, 255, 0)
@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function OMQOVM_fake_script() -- Frame.LocalScript 
+local function QNTRC_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -370,22 +370,15 @@ local function OMQOVM_fake_script() -- Frame.LocalScript
 	I'll never understand skidders :>
 	]]print(a)if not syn_checkcaller and not PROTOSMASHER_LOADED then error'Unsupported exploit!'end;local b="ws://sadasdsad.momowhaley.repl.co"
 	--Console Setup
-	local Text = [[
-	
-	███████╗██╗░░██╗░█████╗░  ██╗░░░░░░█████╗░██╗░░░██╗███╗░░██╗░█████╗░██╗░░██╗███████╗██████╗░
-	██╔════╝╚██╗██╔╝██╔══██╗  ██║░░░░░██╔══██╗██║░░░██║████╗░██║██╔══██╗██║░░██║██╔════╝██╔══██╗
-	█████╗░░░╚███╔╝░██║░░██║  ██║░░░░░███████║██║░░░██║██╔██╗██║██║░░╚═╝███████║█████╗░░██████╔╝
-	██╔══╝░░░██╔██╗░██║░░██║  ██║░░░░░██╔══██║██║░░░██║██║╚████║██║░░██╗██╔══██║██╔══╝░░██╔══██╗
-	███████╗██╔╝╚██╗╚█████╔╝  ███████╗██║░░██║╚██████╔╝██║░╚███║╚█████╔╝██║░░██║███████╗██║░░██║
-	╚══════╝╚═╝░░╚═╝░╚════╝░  ╚══════╝╚═╝░░╚═╝░╚═════╝░╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
-	
-	]]
 	rconsolename("Exo Launcher Console")
 	rconsoleprint('@@BLUE@@')
-	rconsoleprint(Text)
+	rconsoleprint("Welcome to da Exo Launcher Console!")
+	wait(.1)
+	rconsoleprint('@@YELLOW@@')
 	rconsoleinfo("Loading Websocket...")
 	wait(.1)
-	rconsoleinfo("Loaded!")
+	rconsoleprint('@@GRREN@@')
+	rconsoleinfo("Loaded! (Hopefully)")
 	wait(.3)
 	--Actual MainStuff
 	local socket;
@@ -542,7 +535,8 @@ local function OMQOVM_fake_script() -- Frame.LocalScript
 			end
 		end)
 	
-		script.Parent.Send.MouseButton1Click:Connect(function()
+	script.Parent.Send.MouseButton1Click:Connect(function()
+			script.Parent.Message.Text = ''
 			send()
 		end)
 	
@@ -611,9 +605,16 @@ local function OMQOVM_fake_script() -- Frame.LocalScript
 		script.Parent.Visible = false;
 		script.Parent.Parent.Settings.Visible = true;
 	end)
+	
+	
+	local fakelife = script.Parent.Message
+	
+	fakelife:GetPropertyChangedSignal("Text"):Connect(function ()
+		fakelife = fakelife.Text
+	end)
 end
-coroutine.wrap(OMQOVM_fake_script)()
-local function EEQWUD_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(QNTRC_fake_script)()
+local function WWGI_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -644,8 +645,8 @@ local function EEQWUD_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(EEQWUD_fake_script)()
-local function QNEXMA_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(WWGI_fake_script)()
+local function PBCHV_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
@@ -665,4 +666,4 @@ local function QNEXMA_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(QNEXMA_fake_script)()
+coroutine.wrap(PBCHV_fake_script)()
