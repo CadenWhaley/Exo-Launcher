@@ -39,6 +39,7 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Frame.Position = UDim2.new(0.169346198, 0, 0.285953164, 0)
 Frame.Size = UDim2.new(0, 616, 0, 363)
+Frame.Visible = false
 
 MessageHolder.Name = "MessageHolder"
 MessageHolder.Parent = Frame
@@ -193,7 +194,7 @@ Settings.Parent = Frame
 Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Settings.BackgroundTransparency = 1.000
 Settings.BorderSizePixel = 0
-Settings.Position = UDim2.new(0.846078932, 0, 0.764124751, 0)
+Settings.Position = UDim2.new(0.846000016, 0, 0.88499999, 0)
 Settings.Size = UDim2.new(0, 88, 0, 36)
 Settings.ZIndex = 2
 Settings.Font = Enum.Font.ArialBold
@@ -222,7 +223,7 @@ Send.Parent = Frame
 Send.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Send.BackgroundTransparency = 1.000
 Send.BorderSizePixel = 0
-Send.Position = UDim2.new(0.846078932, 0, 0.885336876, 0)
+Send.Position = UDim2.new(0.846000016, 0, 0.763999999, 0)
 Send.Size = UDim2.new(0, 88, 0, 36)
 Send.ZIndex = 2
 Send.Font = Enum.Font.ArialBold
@@ -282,7 +283,6 @@ Settings_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Settings_2.BorderSizePixel = 0
 Settings_2.Position = UDim2.new(0.246717542, 0, 0.272284269, 0)
 Settings_2.Size = UDim2.new(0, 616, 0, 363)
-Settings_2.Visible = false
 
 RainbowTxt.Name = "RainbowTxt"
 RainbowTxt.Parent = Settings_2
@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function AMDTWY_fake_script() -- Frame.LocalScript 
+local function SLREN_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -372,14 +372,7 @@ local function AMDTWY_fake_script() -- Frame.LocalScript
 	--Console Setup
 	rconsolename("Exo Launcher Console")
 	rconsoleprint('@@BLUE@@')
-	rconsoleprint("Welcome to da Exo Launcher Console!")
-	wait(.1)
-	rconsoleprint('@@YELLOW@@')
-	rconsoleprint("Loading Websocket...")
-	wait(.1)
-	rconsoleprint('@@GRREN@@')
-	rconsoleprint("Loaded! (Hopefully)")
-	wait(.3)
+	rconsoleprint("Welcome to da Exo Launcher Console! (Useless for now) ")
 	--Actual MainStuff
 	local socket;
 	if syn_checkcaller then
@@ -478,7 +471,7 @@ local function AMDTWY_fake_script() -- Frame.LocalScript
 			local debounce = false;
 			local Commands = {
 		['.help'] = function()
-			print("WIP")
+			--do nothing for now
 		end}
 	
 		function send()
@@ -605,8 +598,8 @@ local function AMDTWY_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(AMDTWY_fake_script)()
-local function XUQIDB_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(SLREN_fake_script)()
+local function HWRKBO_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -637,8 +630,8 @@ local function XUQIDB_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(XUQIDB_fake_script)()
-local function XGIPKMO_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(HWRKBO_fake_script)()
+local function KEKY_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
@@ -649,6 +642,36 @@ local function XGIPKMO_fake_script() -- Settings_2.AnotherHandler
 			if script.Parent.RainbowButton.Text == "Disabled" then
 				script.Parent.RainbowButton.Text = "Enabled" 
 				script.Parent.RainbowButton.TextColor3 = Color3.new(0, 255, 0)
+				script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(ez)
+					local Parent = ez.Message.Text
+					while script.Parent.RainbowButton.Text == "Enabled" do
+						Parent.TextColor3 = Color3.new(1,0,0)
+						for i=1,15 do
+							game:GetService("RunService").RenderStepped:wait()
+							Parent.TextColor3 = Color3.new(Parent.TextColor3.r,Parent.TextColor3.g+(17/255),Parent.TextColor3.b)
+						end
+						for i=1,15 do
+							game:GetService("RunService").RenderStepped:wait()
+							Parent.TextColor3 = Color3.new(Parent.TextColor3.r-(17/255),Parent.TextColor3.g,Parent.TextColor3.b)
+						end
+						for i=1,15 do
+							game:GetService("RunService").RenderStepped:wait()
+							Parent.TextColor3 = Color3.new(Parent.TextColor3.r,Parent.TextColor3.g,Parent.TextColor3.b+(17/255))
+						end
+						for i=1,15 do
+							game:GetService("RunService").RenderStepped:wait()
+							Parent.TextColor3 = Color3.new(Parent.TextColor3.r,Parent.TextColor3.g-(17/255),Parent.TextColor3.b)
+						end
+						for i=1,15 do
+							game:GetService("RunService").RenderStepped:wait()
+							Parent.TextColor3 = Color3.new(Parent.TextColor3.r+(17/255),Parent.TextColor3.g,Parent.TextColor3.b)
+						end
+						for i=1,15 do
+							game:GetService("RunService").RenderStepped:wait()
+							Parent.TextColor3 = Color3.new(Parent.TextColor3.r,Parent.TextColor3.g,Parent.TextColor3.b-(17/255))
+						end
+					end
+				end)
 			end
 		end
 	end)
@@ -658,4 +681,4 @@ local function XGIPKMO_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(XGIPKMO_fake_script)()
+coroutine.wrap(KEKY_fake_script)()
