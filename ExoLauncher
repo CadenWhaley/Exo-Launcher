@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function FICIRC_fake_script() -- Frame.LocalScript 
+local function NAXBL_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -598,8 +598,8 @@ local function FICIRC_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(FICIRC_fake_script)()
-local function RSIYY_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(NAXBL_fake_script)()
+local function DMGPWM_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -630,11 +630,11 @@ local function RSIYY_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(RSIYY_fake_script)()
-local function NATBCRK_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(DMGPWM_fake_script)()
+local function HCBW_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
-	local Status = false
+	local Status;
 	
 	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
 		if script.Parent.RainbowButton.Text == "Enabled" then
@@ -674,4 +674,4 @@ local function NATBCRK_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(NATBCRK_fake_script)()
+coroutine.wrap(HCBW_fake_script)()
