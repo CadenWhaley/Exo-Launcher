@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function QDIN_fake_script() -- Frame.LocalScript 
+local function FICIRC_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -598,8 +598,8 @@ local function QDIN_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(QDIN_fake_script)()
-local function PYWLULZ_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(FICIRC_fake_script)()
+local function RSIYY_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -630,8 +630,8 @@ local function PYWLULZ_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(PYWLULZ_fake_script)()
-local function LCTWCXM_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(RSIYY_fake_script)()
+local function NATBCRK_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status = false
@@ -643,14 +643,10 @@ local function LCTWCXM_fake_script() -- Settings_2.AnotherHandler
 			Status=false
 			for _,v in pairs(script.Parent.Parent.Frame.MessageHolder:GetDescendants()) do
 				if v.Name == 'Message' then
-					v.TextColor3 = Color3.new(255,255,255)
-					wait(0.1)
-					v.TextColor3 = Color3.new(255,255,255)
-					wait(0.1)
-					v.TextColor3 = Color3.new(255,255,255)
-					wait(0.1)
-					v.TextColor3 = Color3.new(255,255,255)
-					wait(0.1)
+					repeat
+						wait()
+						v.TextColor3 = Color3.new(255,255,255)
+					until v.TextColor3 == Color3.new(255,255,255)
 				end
 			end
 		else
@@ -678,4 +674,4 @@ local function LCTWCXM_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(LCTWCXM_fake_script)()
+coroutine.wrap(NATBCRK_fake_script)()
