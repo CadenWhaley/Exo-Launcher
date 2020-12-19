@@ -306,10 +306,10 @@ RainbowButton.BorderSizePixel = 0
 RainbowButton.Position = UDim2.new(0.0599716492, 0, 0.176543429, 0)
 RainbowButton.Size = UDim2.new(0, 187, 0, 46)
 RainbowButton.Font = Enum.Font.SourceSans
-RainbowButton.Text = "Enabled"
-RainbowButton.TextColor3 = Color3.fromRGB(0, 255, 0)
+RainbowButton.Text = "Disabled"
+RainbowButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 RainbowButton.TextSize = 40.000
-RainbowButton.TextStrokeColor3 = Color3.fromRGB(0, 255, 93)
+RainbowButton.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
 
 TextLabel_2.Parent = Settings_2
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function YDNXRY_fake_script() -- Frame.LocalScript 
+local function BCJLVE_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -598,8 +598,8 @@ local function YDNXRY_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(YDNXRY_fake_script)()
-local function FIFMZG_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(BCJLVE_fake_script)()
+local function QXJCCY_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -630,8 +630,8 @@ local function FIFMZG_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(FIFMZG_fake_script)()
-local function RBIBBGJ_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(QXJCCY_fake_script)()
+local function TNMYZ_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status = false
@@ -641,6 +641,11 @@ local function RBIBBGJ_fake_script() -- Settings_2.AnotherHandler
 			script.Parent.RainbowButton.Text = "Disabled"
 			script.Parent.RainbowButton.TextColor3 = Color3.new(255, 0, 0)
 			Status=false
+			for _,v in pairs(script.Parent.Parent.Frame.MessageHolder:GetDescendants()) do
+				if v.Name == 'Message' then
+					v.TextColor3 = Color3.new(255,255,255)
+				end
+			end
 		else
 			if script.Parent.RainbowButton.Text == "Disabled" then
 				script.Parent.RainbowButton.Text = "Enabled" 
@@ -666,4 +671,4 @@ local function RBIBBGJ_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(RBIBBGJ_fake_script)()
+coroutine.wrap(TNMYZ_fake_script)()
