@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function PNVVGN_fake_script() -- Frame.LocalScript 
+local function WJVMZ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -598,8 +598,8 @@ local function PNVVGN_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(PNVVGN_fake_script)()
-local function NJYOXX_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(WJVMZ_fake_script)()
+local function IYKRJ_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -630,8 +630,8 @@ local function NJYOXX_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(NJYOXX_fake_script)()
-local function FWVTYG_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(IYKRJ_fake_script)()
+local function XLHFJRM_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -641,13 +641,6 @@ local function FWVTYG_fake_script() -- Settings_2.AnotherHandler
 			script.Parent.RainbowButton.Text = "Disabled"
 			script.Parent.RainbowButton.TextColor3 = Color3.new(255, 0, 0)
 			Status=false
-			for _,v in pairs(script.Parent.Parent.Frame.MessageHolder:GetDescendants()) do
-				local Message = v:WaitForChild("Message")
-					repeat
-					wait()
-					Message.TextColor3 = Color3.new(255,255,255)
-					until v.TextColor3 == Color3.new(255,255,255)
-			end
 		else
 			if script.Parent.RainbowButton.Text == "Disabled" then
 				script.Parent.RainbowButton.Text = "Enabled" 
@@ -673,4 +666,4 @@ local function FWVTYG_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(FWVTYG_fake_script)()
+coroutine.wrap(XLHFJRM_fake_script)()
