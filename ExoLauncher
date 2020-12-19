@@ -354,7 +354,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function BCJLVE_fake_script() -- Frame.LocalScript 
+local function FIMBO_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -598,8 +598,8 @@ local function BCJLVE_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(BCJLVE_fake_script)()
-local function QXJCCY_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(FIMBO_fake_script)()
+local function WUAY_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -630,8 +630,8 @@ local function QXJCCY_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(QXJCCY_fake_script)()
-local function TNMYZ_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(WUAY_fake_script)()
+local function ERGFOWB_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status = false
@@ -671,4 +671,4 @@ local function TNMYZ_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(TNMYZ_fake_script)()
+coroutine.wrap(ERGFOWB_fake_script)()
