@@ -28,6 +28,11 @@ local RainbowButton = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local Back = Instance.new("TextButton")
 local Send_Roundify_2px_3 = Instance.new("ImageLabel")
+local URLCopy = Instance.new("TextLabel")
+local URLCopu = Instance.new("TextButton")
+local Buttons = Instance.new("Folder")
+local Send_2 = Instance.new("TextButton")
+local Send_Roundify_2px_4 = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -47,6 +52,7 @@ MessageHolder.BorderColor3 = Color3.fromRGB(43, 43, 43)
 MessageHolder.BorderSizePixel = 0
 MessageHolder.Position = UDim2.new(0.0393659435, 0, 0.187350199, 0)
 MessageHolder.Size = UDim2.new(0, 567, 0, 198)
+MessageHolder.CanvasPosition = Vector2.new(0, 528)
 MessageHolder.ScrollBarThickness = 1
 
 Placeholder.Name = "Placeholder"
@@ -340,9 +346,69 @@ Send_Roundify_2px_3.ScaleType = Enum.ScaleType.Slice
 Send_Roundify_2px_3.SliceCenter = Rect.new(100, 100, 100, 100)
 Send_Roundify_2px_3.SliceScale = 0.090
 
+URLCopy.Name = "URL Copy"
+URLCopy.Parent = Settings_2
+URLCopy.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+URLCopy.BorderColor3 = Color3.fromRGB(30, 30, 30)
+URLCopy.BorderSizePixel = 0
+URLCopy.Position = UDim2.new(0.483672947, 0, 0.342425466, 0)
+URLCopy.Size = UDim2.new(0, 187, 0, 46)
+URLCopy.Font = Enum.Font.SourceSans
+URLCopy.Text = "URL Copy"
+URLCopy.TextColor3 = Color3.fromRGB(255, 255, 255)
+URLCopy.TextScaled = true
+URLCopy.TextSize = 14.000
+URLCopy.TextWrapped = true
+
+URLCopu.Name = "URLCopu"
+URLCopu.Parent = Settings_2
+URLCopu.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+URLCopu.BorderColor3 = Color3.fromRGB(30, 30, 30)
+URLCopu.BorderSizePixel = 0
+URLCopu.Position = UDim2.new(0.483672947, 0, 0.176543429, 0)
+URLCopu.Size = UDim2.new(0, 187, 0, 46)
+URLCopu.Font = Enum.Font.SourceSans
+URLCopu.Text = "Disabled"
+URLCopu.TextColor3 = Color3.fromRGB(255, 0, 0)
+URLCopu.TextSize = 40.000
+URLCopu.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+
+Buttons.Name = "Buttons"
+Buttons.Parent = ScreenGui
+
+Send_2.Name = "Send"
+Send_2.Parent = Buttons
+Send_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send_2.BackgroundTransparency = 1.000
+Send_2.BorderSizePixel = 0
+Send_2.Position = UDim2.new(0.711528242, 0, 0.566675603, 0)
+Send_2.Size = UDim2.new(0, 72, 0, 26)
+Send_2.Visible = false
+Send_2.ZIndex = 2
+Send_2.Font = Enum.Font.ArialBold
+Send_2.Text = "Copy"
+Send_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Send_2.TextSize = 29.000
+Send_2.TextWrapped = true
+
+Send_Roundify_2px_4.Name = "Send_Roundify_2px"
+Send_Roundify_2px_4.Parent = Send_2
+Send_Roundify_2px_4.Active = true
+Send_Roundify_2px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Send_Roundify_2px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send_Roundify_2px_4.BackgroundTransparency = 1.000
+Send_Roundify_2px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+Send_Roundify_2px_4.Selectable = true
+Send_Roundify_2px_4.Size = UDim2.new(1, 0, 1, 0)
+Send_Roundify_2px_4.Image = "rbxassetid://3570695787"
+Send_Roundify_2px_4.ImageColor3 = Color3.fromRGB(0, 0, 191)
+Send_Roundify_2px_4.ScaleType = Enum.ScaleType.Slice
+Send_Roundify_2px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Send_Roundify_2px_4.SliceScale = 0.090
+
 -- Scripts:
 
-local function ZEHTO_fake_script() -- Frame.LocalScript 
+local function PFRZBCT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -585,8 +651,8 @@ local function ZEHTO_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(ZEHTO_fake_script)()
-local function KHEBYSI_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(PFRZBCT_fake_script)()
+local function EWKSC_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -617,11 +683,12 @@ local function KHEBYSI_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(KHEBYSI_fake_script)()
-local function IKBN_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(EWKSC_fake_script)()
+local function KWLQXTT_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
+	local Status2;
 	
 	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
 		if script.Parent.RainbowButton.Text == "Enabled" then
@@ -648,9 +715,38 @@ local function IKBN_fake_script() -- Settings_2.AnotherHandler
 		end
 	end)
 	
+	script.Parent.URLCopu.MouseButton1Click:Connect(function()
+		if script.Parent.URLCopu.Text == "Enabled" then
+			script.Parent.URLCopu.Text = "Disabled"
+			script.Parent.URLCopu.TextColor3 = Color3.new(255, 0, 0)
+			Status2=false
+		else
+			if script.Parent.URLCopu.Text == "Disabled" then
+				script.Parent.URLCopu.Text = "Enabled" 
+				script.Parent.URLCopu.TextColor3 = Color3.new(0, 255, 0)
+				Status2=true
+				if Status2 then
+					script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
+						local lowerit = eff.Message:lower()
+						if lowerit:find("http") then
+							local Cull = script.Parent.Parent.Buttons.Send:Clone()
+							Cull.Parent = eff
+							Cull.CFrame = CFrame.new(eff.CFrame)
+							Cull.Visible = true
+							Cull.MouseButton1Click:Connect(function()
+								setclipboard(tostring(Cull.Parent.Message.Txt))
+							end)
+						end
+					end)
+				end
+			end
+		end
+	end)
+	
+	
 	script.Parent.Back.MouseButton1Click:Connect(function()
 		script.Parent.Visible = false
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(IKBN_fake_script)()
+coroutine.wrap(KWLQXTT_fake_script)()
