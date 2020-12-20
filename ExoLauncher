@@ -408,7 +408,7 @@ Send_Roundify_2px_4.SliceScale = 0.090
 
 -- Scripts:
 
-local function XTPUB_fake_script() -- Frame.LocalScript 
+local function DNOV_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -650,8 +650,8 @@ local function XTPUB_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(XTPUB_fake_script)()
-local function BEBGPW_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(DNOV_fake_script)()
+local function WFOHST_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -682,8 +682,8 @@ local function BEBGPW_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(BEBGPW_fake_script)()
-local function NOFG_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(WFOHST_fake_script)()
+local function JTTCELS_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -726,8 +726,8 @@ local function NOFG_fake_script() -- Settings_2.AnotherHandler
 				Status2=true
 				if Status2 then
 					script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
-						local lowerit = eff.Message:lower()
-						if lowerit:find("http") then
+						local lowerit = eff.Message.Txt:lower()
+						if lowerit:find("https://pastebin.com/") then
 							local Cull = script.Parent.Parent.Buttons.Send:Clone()
 							Cull.Parent = eff
 							Cull.CFrame = CFrame.new(eff.CFrame)
@@ -748,4 +748,4 @@ local function NOFG_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(NOFG_fake_script)()
+coroutine.wrap(JTTCELS_fake_script)()
