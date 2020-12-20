@@ -408,7 +408,7 @@ Send_Roundify_2px_4.SliceScale = 0.090
 
 -- Scripts:
 
-local function PFRZBCT_fake_script() -- Frame.LocalScript 
+local function XTPUB_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -438,7 +438,6 @@ local function PFRZBCT_fake_script() -- Frame.LocalScript
 	
 	local username = game.Players.LocalPlayer.Name
 	local Message = script.Parent.Message
-	local Emoji = require(script.Parent.EmojiList)
 	
 		local json_encode = function(tbl)
 			local json = game:GetService("HttpService"):JSONEncode(tbl)
@@ -651,8 +650,8 @@ local function PFRZBCT_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(PFRZBCT_fake_script)()
-local function EWKSC_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(XTPUB_fake_script)()
+local function BEBGPW_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -683,8 +682,8 @@ local function EWKSC_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(EWKSC_fake_script)()
-local function KWLQXTT_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(BEBGPW_fake_script)()
+local function NOFG_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -749,4 +748,4 @@ local function KWLQXTT_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(KWLQXTT_fake_script)()
+coroutine.wrap(NOFG_fake_script)()
