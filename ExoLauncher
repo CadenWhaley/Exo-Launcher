@@ -371,7 +371,7 @@ URLCopu.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
 
 -- Scripts:
 
-local function VQKXBW_fake_script() -- Frame.LocalScript 
+local function YSMAA_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -613,8 +613,8 @@ local function VQKXBW_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(VQKXBW_fake_script)()
-local function WSKPZTD_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(YSMAA_fake_script)()
+local function RZEAN_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -645,8 +645,8 @@ local function WSKPZTD_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(WSKPZTD_fake_script)()
-local function RWII_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(RZEAN_fake_script)()
+local function LKCHBMS_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -689,6 +689,7 @@ local function RWII_fake_script() -- Settings_2.AnotherHandler
 				Status2=true
 				if Status2 then
 					script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
+						wait(.1)
 							local eee = Instance.new("ClickDetector",eff.Message)
 							eee.RightMouseClick:Connect(function()
 							setclipboard(tostring(eff.Message.Text))
@@ -706,4 +707,4 @@ local function RWII_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(RWII_fake_script)()
+coroutine.wrap(LKCHBMS_fake_script)()
