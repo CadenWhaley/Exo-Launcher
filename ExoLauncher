@@ -371,7 +371,7 @@ URLCopu.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
 
 -- Scripts:
 
-local function XMEVWTX_fake_script() -- Frame.LocalScript 
+local function VVUE_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -613,8 +613,8 @@ local function XMEVWTX_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(XMEVWTX_fake_script)()
-local function NEKBRV_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(VVUE_fake_script)()
+local function CFFJA_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -645,8 +645,8 @@ local function NEKBRV_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(NEKBRV_fake_script)()
-local function DIPSD_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(CFFJA_fake_script)()
+local function FGYISD_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -690,18 +690,16 @@ local function DIPSD_fake_script() -- Settings_2.AnotherHandler
 				if Status2 then
 					script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
 						local lowerit = eff.Message.Text:lower()
-						if lowerit:find("https://pastebin.com/") then
 							local eee=Instance.new("ClickDetector",eff)
 							eee.RightMouseClick:Connect(function()
-								setclipboard(tostring(eff.Message.Text))
-							end)
-						end
-						
-							end)
-						end
+							setclipboard(tostring(eff.Message.Text))
+						end)
+					end)
+				end
 			end
 		end
-		end)
+	end)
+	
 					
 	
 	script.Parent.Back.MouseButton1Click:Connect(function()
@@ -709,4 +707,4 @@ local function DIPSD_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(DIPSD_fake_script)()
+coroutine.wrap(FGYISD_fake_script)()
