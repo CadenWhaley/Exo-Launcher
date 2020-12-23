@@ -1544,14 +1544,14 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function IFLUND_fake_script() -- Frame.LocalScript 
+local function YMZNF_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local username1 = game.Players.LocalPlayer.Name
 	if username1 == 'WsTPxAlaska' or 'jehad00' then
 		Roles = 'Dev'
 	else
-		if username1 == 'hidolp55' or 'Maxisbestinroblox ' then
+		if username1 == 'hidolp55' or 'Maxisbestinroblox' or 'linkmiegel' then
 			Roles = 'ST'
 		else
 			Roles = 'MB'
@@ -1787,8 +1787,8 @@ local function IFLUND_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(IFLUND_fake_script)()
-local function NJME_fake_script() -- List.Script 
+coroutine.wrap(YMZNF_fake_script)()
+local function OIMBQUJ_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1800,8 +1800,8 @@ local function NJME_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(NJME_fake_script)()
-local function YWQUNNH_fake_script() -- Emoji_96.Script 
+coroutine.wrap(OIMBQUJ_fake_script)()
+local function RYQGR_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1816,8 +1816,8 @@ local function YWQUNNH_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(YWQUNNH_fake_script)()
-local function FCBWGAH_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(RYQGR_fake_script)()
+local function WHUMXH_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1848,8 +1848,8 @@ local function FCBWGAH_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(FCBWGAH_fake_script)()
-local function QRPXNA_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(WHUMXH_fake_script)()
+local function FPBZEH_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1897,4 +1897,4 @@ local function QRPXNA_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(QRPXNA_fake_script)()
+coroutine.wrap(FPBZEH_fake_script)()
