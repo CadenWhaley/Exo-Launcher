@@ -1535,7 +1535,7 @@ TextButton.TextSize = 25.000
 
 -- Scripts:
 
-local function QLOIKCR_fake_script() -- Frame.LocalScript 
+local function SIVGHFV_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1778,8 +1778,8 @@ local function QLOIKCR_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(QLOIKCR_fake_script)()
-local function QWVOKC_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(SIVGHFV_fake_script)()
+local function XSBALCJ_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1810,8 +1810,8 @@ local function QWVOKC_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(QWVOKC_fake_script)()
-local function ZDELGW_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(XSBALCJ_fake_script)()
+local function PZIXF_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1845,10 +1845,18 @@ local function ZDELGW_fake_script() -- Settings_2.AnotherHandler
 	
 		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
 		wait(.1)
-		eff.Message.InputBegan:Connect(function()
-		setclipboard(eff.Message.Text)
-		end)
+		for _,v in pairs(script.Parent.Parent.EmojiTab.List:GetChildren()) do
+			if v:IsA("GuiButton") then
+				if script.Parent.Parent.Frame.Message.Text:FindFirstChild(v.Text) then
+					return end
+			else	
+				eff.Message.InputBegan:Connect(function()
+					setclipboard(eff.Message.Text)
+				end)
+			end
+		end
 	end)
+	
 	
 					
 	
@@ -1858,8 +1866,8 @@ local function ZDELGW_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.EmojiTab.Visible = true
 	end)
 end
-coroutine.wrap(ZDELGW_fake_script)()
-local function XCBSIY_fake_script() -- List.Script 
+coroutine.wrap(PZIXF_fake_script)()
+local function ZTLHDI_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1871,8 +1879,8 @@ local function XCBSIY_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(XCBSIY_fake_script)()
-local function RKVN_fake_script() -- TextButton.Script 
+coroutine.wrap(ZTLHDI_fake_script)()
+local function BTRL_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	local Emoji = script.Parent.Parent.Parent.EmojiTab
@@ -1887,4 +1895,4 @@ local function RKVN_fake_script() -- TextButton.Script
 		end
 	end)
 end
-coroutine.wrap(RKVN_fake_script)()
+coroutine.wrap(BTRL_fake_script)()
