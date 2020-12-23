@@ -1515,7 +1515,7 @@ TextButton.Parent = TopBarContainer
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.481187195, 0, 14.583333, 0)
+TextButton.Position = UDim2.new(0.481187195, 0, 14.75, 0)
 TextButton.Size = UDim2.new(0, 30, 0, 30)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "🙂"
@@ -1524,7 +1524,7 @@ TextButton.TextSize = 25.000
 
 -- Scripts:
 
-local function FCFBBBM_fake_script() -- Frame.LocalScript 
+local function NXLH_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1766,8 +1766,8 @@ local function FCFBBBM_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(FCFBBBM_fake_script)()
-local function MSULJS_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(NXLH_fake_script)()
+local function XHDU_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1798,8 +1798,8 @@ local function MSULJS_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(MSULJS_fake_script)()
-local function SCCSOSM_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(XHDU_fake_script)()
+local function AVFQR_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1845,8 +1845,8 @@ local function SCCSOSM_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(SCCSOSM_fake_script)()
-local function LZGRVI_fake_script() -- List.Script 
+coroutine.wrap(AVFQR_fake_script)()
+local function YESKR_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1858,8 +1858,8 @@ local function LZGRVI_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(LZGRVI_fake_script)()
-local function IRHSMEY_fake_script() -- TextButton.Script 
+coroutine.wrap(YESKR_fake_script)()
+local function TXTQ_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	local Emoji = script.Parent.Parent.Parent.EmojiTab
@@ -1874,4 +1874,4 @@ local function IRHSMEY_fake_script() -- TextButton.Script
 		end
 	end)
 end
-coroutine.wrap(IRHSMEY_fake_script)()
+coroutine.wrap(TXTQ_fake_script)()
