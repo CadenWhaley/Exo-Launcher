@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function SKMVLD_fake_script() -- Frame.LocalScript 
+local function IKGZK_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1788,8 +1788,8 @@ local function SKMVLD_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(SKMVLD_fake_script)()
-local function CWEFLH_fake_script() -- List.Script 
+coroutine.wrap(IKGZK_fake_script)()
+local function NVUYY_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1801,8 +1801,8 @@ local function CWEFLH_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(CWEFLH_fake_script)()
-local function OKZK_fake_script() -- Emoji_96.Script 
+coroutine.wrap(NVUYY_fake_script)()
+local function RNYEP_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1814,10 +1814,11 @@ local function OKZK_fake_script() -- Emoji_96.Script
 			if Emoji.Visible == false then
 				Emoji.Visible = true 
 		end
-	end)
+		end
+		end)
 end
-coroutine.wrap(OKZK_fake_script)()
-local function XNKZ_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(RNYEP_fake_script)()
+local function HQNOG_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1848,8 +1849,8 @@ local function XNKZ_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(XNKZ_fake_script)()
-local function WAFER_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(HQNOG_fake_script)()
+local function ABRQZZ_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1897,4 +1898,4 @@ local function WAFER_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = true
 	end)
 end
-coroutine.wrap(WAFER_fake_script)()
+coroutine.wrap(ABRQZZ_fake_script)()
