@@ -147,7 +147,6 @@ MessageHolder.BorderColor3 = Color3.fromRGB(43, 43, 43)
 MessageHolder.BorderSizePixel = 0
 MessageHolder.Position = UDim2.new(0.0393659435, 0, 0.187350199, 0)
 MessageHolder.Size = UDim2.new(0, 567, 0, 198)
-MessageHolder.CanvasPosition = Vector2.new(0, 528)
 MessageHolder.ScrollBarThickness = 1
 
 Placeholder.Name = "Placeholder"
@@ -1545,32 +1544,26 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function KPIT_fake_script() -- Frame.LocalScript 
+local function EZHK_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	
-	if settings then
-		Roles = settings.Roles
+	local username1 = game.Players.LocalPlayer.Name
+	if username1 == 'WsTPxAlaska' then
+		Roles = 'Dev'
 	end
-	local Lenglthcd = string.len(Roles)
-	if Lenglthcd > 7 then
-		print("Your actually retarded your role is more than 7 Characters bud")
-		ScreenGui:Destroy()
-		return end
+	
 	local a=[[
 	I'll never understand skidders :>
-	]]print(a)if not syn_checkcaller and not PROTOSMASHER_LOADED then error'Unsupported exploit!'end;local b="ws://sadasdsad.momowhaley.repl.co"
+	]]print(a)if not syn_checkcaller then error'Unsupported exploit!'end;local b="ws://sadasdsad.momowhaley.repl.co"
 	--Console Setup
 	rconsolename("Exo Launcher Console")
 	rconsoleprint('@@BLUE@@')
 	rconsoleprint("Welcome to da Exo Launcher Console! (Useless for now) ")
+	
 	--Actual MainStuff
 	local socket;
 	if syn_checkcaller then
 		socket = syn.websocket.connect(b)
-	elseif PROTOSMASHER_LOADED then
-		socket = WebSocket.new(b)
-		socket:ConnectToServer()
 	end
 	
 	local username = game.Players.LocalPlayer.Name
@@ -1788,8 +1781,8 @@ local function KPIT_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(KPIT_fake_script)()
-local function WVXA_fake_script() -- List.Script 
+coroutine.wrap(EZHK_fake_script)()
+local function TKAFCY_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1801,8 +1794,8 @@ local function WVXA_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(WVXA_fake_script)()
-local function HREYWDG_fake_script() -- Emoji_96.Script 
+coroutine.wrap(TKAFCY_fake_script)()
+local function YGPDZB_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1817,8 +1810,8 @@ local function HREYWDG_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(HREYWDG_fake_script)()
-local function WKNU_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(YGPDZB_fake_script)()
+local function NOMMZB_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1849,8 +1842,8 @@ local function WKNU_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(WKNU_fake_script)()
-local function CKEMYCE_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(NOMMZB_fake_script)()
+local function GUNEOL_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1884,8 +1877,8 @@ local function CKEMYCE_fake_script() -- Settings_2.AnotherHandler
 	
 		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
 		wait(.1)
-				eff.Message.InputBegan:Connect(function()
-					setclipboard(eff.Message.Text)
+		eff.Message.InputBegan:Connect(function()
+			setclipboard(eff.Message.Text)
 		end)
 	end)
 	
@@ -1895,7 +1888,7 @@ local function CKEMYCE_fake_script() -- Settings_2.AnotherHandler
 	script.Parent.Back.MouseButton1Click:Connect(function()
 		script.Parent.Visible = false
 		script.Parent.Parent.Frame.Visible = true
-		script.Parent.Parent.Frame.EmojiTab.Visible = true
+		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(CKEMYCE_fake_script)()
+coroutine.wrap(GUNEOL_fake_script)()
