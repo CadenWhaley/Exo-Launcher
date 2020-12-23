@@ -126,8 +126,7 @@ local Emoji_93 = Instance.new("TextButton")
 local Emoji_94 = Instance.new("TextButton")
 local Emoji_95 = Instance.new("TextButton")
 local TopBarContainer = Instance.new("Frame")
-local Emoji_96 = Instance.new("ImageButton")
-local TextLabel_3 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
 
 --Properties:
 
@@ -1512,26 +1511,20 @@ TopBarContainer.BorderSizePixel = 0
 TopBarContainer.Position = UDim2.new(0, 0, 0, -36)
 TopBarContainer.Size = UDim2.new(1, 0, 0, 36)
 
-Emoji_96.Name = "Emoji"
-Emoji_96.Parent = TopBarContainer
-Emoji_96.BackgroundTransparency = 1.000
-Emoji_96.Position = UDim2.new(0, 150, 0, 0)
-Emoji_96.Size = UDim2.new(0, 50, 0, 114)
-Emoji_96.AutoButtonColor = false
-
-TextLabel_3.Parent = Emoji_96
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(11.9200001, -11, 4.76315784, -14)
-TextLabel_3.Size = UDim2.new(0, 22, 0, 28)
-TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "🙂"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextSize = 25.000
+TextButton.Parent = TopBarContainer
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.480536163, 0, 14.583333, 0)
+TextButton.Size = UDim2.new(0, 30, 0, 30)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "🙂"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 25.000
 
 -- Scripts:
 
-local function SVSRA_fake_script() -- Frame.LocalScript 
+local function KAXW_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1773,8 +1766,8 @@ local function SVSRA_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(SVSRA_fake_script)()
-local function HLPCVU_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(KAXW_fake_script)()
+local function XOVBYJV_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1805,8 +1798,8 @@ local function HLPCVU_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(HLPCVU_fake_script)()
-local function NAAOXS_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(XOVBYJV_fake_script)()
+local function IQZP_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1852,8 +1845,8 @@ local function NAAOXS_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(NAAOXS_fake_script)()
-local function YVJJRJ_fake_script() -- List.Script 
+coroutine.wrap(IQZP_fake_script)()
+local function RZRQRO_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1862,9 +1855,9 @@ local function YVJJRJ_fake_script() -- List.Script
 			end)
 		end
 end
-coroutine.wrap(YVJJRJ_fake_script)()
-local function PVCXL_fake_script() -- Emoji_96.LocalScript 
-	local script = Instance.new('LocalScript', Emoji_96)
+coroutine.wrap(RZRQRO_fake_script)()
+local function ZVAC_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
 	local Emoji = script.Parent.Parent.Parent.EmojiTab
 	
@@ -1878,4 +1871,4 @@ local function PVCXL_fake_script() -- Emoji_96.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PVCXL_fake_script)()
+coroutine.wrap(ZVAC_fake_script)()
