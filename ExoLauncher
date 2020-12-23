@@ -447,6 +447,7 @@ EmojiTab.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 EmojiTab.BorderSizePixel = 0
 EmojiTab.Position = UDim2.new(0.602881968, 10, 0.277397901, 25)
 EmojiTab.Size = UDim2.new(0, 200, 0, 200)
+EmojiTab.Visible = false
 
 List.Name = "List"
 List.Parent = EmojiTab
@@ -1534,7 +1535,7 @@ TextButton.TextSize = 25.000
 
 -- Scripts:
 
-local function CZCXF_fake_script() -- Frame.LocalScript 
+local function JBEBAP_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1777,8 +1778,8 @@ local function CZCXF_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(CZCXF_fake_script)()
-local function HHMZPUS_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(JBEBAP_fake_script)()
+local function DNXK_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1809,8 +1810,8 @@ local function HHMZPUS_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(HHMZPUS_fake_script)()
-local function CPFEJF_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(DNXK_fake_script)()
+local function EUJT_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1857,8 +1858,8 @@ local function CPFEJF_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.EmojiTab.Visible = true
 	end)
 end
-coroutine.wrap(CPFEJF_fake_script)()
-local function YOEY_fake_script() -- List.Script 
+coroutine.wrap(EUJT_fake_script)()
+local function JTUJPFQ_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1870,8 +1871,8 @@ local function YOEY_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(YOEY_fake_script)()
-local function OSHDO_fake_script() -- TextButton.Script 
+coroutine.wrap(JTUJPFQ_fake_script)()
+local function IDLWJRS_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	local Emoji = script.Parent.Parent.Parent.EmojiTab
@@ -1886,4 +1887,4 @@ local function OSHDO_fake_script() -- TextButton.Script
 		end
 	end)
 end
-coroutine.wrap(OSHDO_fake_script)()
+coroutine.wrap(IDLWJRS_fake_script)()
