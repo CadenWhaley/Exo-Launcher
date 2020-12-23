@@ -1524,7 +1524,7 @@ TextButton.TextSize = 25.000
 
 -- Scripts:
 
-local function KAXW_fake_script() -- Frame.LocalScript 
+local function LQSJLY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1766,8 +1766,8 @@ local function KAXW_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(KAXW_fake_script)()
-local function XOVBYJV_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(LQSJLY_fake_script)()
+local function QKQMFBZ_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1798,8 +1798,8 @@ local function XOVBYJV_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(XOVBYJV_fake_script)()
-local function IQZP_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(QKQMFBZ_fake_script)()
+local function YEMXXV_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1845,8 +1845,8 @@ local function IQZP_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(IQZP_fake_script)()
-local function RZRQRO_fake_script() -- List.Script 
+coroutine.wrap(YEMXXV_fake_script)()
+local function XSHKBNR_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1855,8 +1855,8 @@ local function RZRQRO_fake_script() -- List.Script
 			end)
 		end
 end
-coroutine.wrap(RZRQRO_fake_script)()
-local function ZVAC_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(XSHKBNR_fake_script)()
+local function KCVK_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Emoji = script.Parent.Parent.Parent.EmojiTab
@@ -1871,4 +1871,4 @@ local function ZVAC_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZVAC_fake_script)()
+coroutine.wrap(KCVK_fake_script)()
