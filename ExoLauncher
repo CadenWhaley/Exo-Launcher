@@ -341,6 +341,7 @@ EmojiTab.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 EmojiTab.BorderSizePixel = 0
 EmojiTab.Position = UDim2.new(1.06392097, 10, 0.142411679, 25)
 EmojiTab.Size = UDim2.new(0, 200, 0, 200)
+EmojiTab.Visible = false
 
 List.Name = "List"
 List.Parent = EmojiTab
@@ -1544,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function MUNFDRB_fake_script() -- Frame.LocalScript 
+local function KPIT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1787,8 +1788,8 @@ local function MUNFDRB_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(MUNFDRB_fake_script)()
-local function FYZY_fake_script() -- List.Script 
+coroutine.wrap(KPIT_fake_script)()
+local function WVXA_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1800,8 +1801,8 @@ local function FYZY_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(FYZY_fake_script)()
-local function DELSRN_fake_script() -- Emoji_96.Script 
+coroutine.wrap(WVXA_fake_script)()
+local function HREYWDG_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1816,8 +1817,8 @@ local function DELSRN_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(DELSRN_fake_script)()
-local function WIIK_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(HREYWDG_fake_script)()
+local function WKNU_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1848,8 +1849,8 @@ local function WIIK_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(WIIK_fake_script)()
-local function FCJHI_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(WKNU_fake_script)()
+local function CKEMYCE_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1897,4 +1898,4 @@ local function FCJHI_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = true
 	end)
 end
-coroutine.wrap(FCJHI_fake_script)()
+coroutine.wrap(CKEMYCE_fake_script)()
