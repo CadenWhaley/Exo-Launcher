@@ -1,239 +1,1900 @@
-local username1 = game.Players.LocalPlayer.Name
-if username1 == 'WsTPxAlaska' or 'jehad00' then
-	Roles = 'Dev'
-else
-	if username1 == 'hidolp55' or 'Maxisbestinroblox ' then
-		Roles = 'ST'
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local MessageHolder = Instance.new("ScrollingFrame")
+local Placeholder = Instance.new("Frame")
+local Username = Instance.new("TextLabel")
+local Message = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local Minimize = Instance.new("TextButton")
+local image = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Message_2 = Instance.new("TextBox")
+local image_2 = Instance.new("ImageLabel")
+local Length = Instance.new("TextLabel")
+local Settings = Instance.new("TextButton")
+local Send_Roundify_2px = Instance.new("ImageLabel")
+local Send = Instance.new("TextButton")
+local Send_Roundify_2px_2 = Instance.new("ImageLabel")
+local EmojiTab = Instance.new("Frame")
+local List = Instance.new("ScrollingFrame")
+local Emoji = Instance.new("TextButton")
+local Emoji_2 = Instance.new("TextButton")
+local Emoji_3 = Instance.new("TextButton")
+local Emoji_4 = Instance.new("TextButton")
+local Emoji_5 = Instance.new("TextButton")
+local Emoji_6 = Instance.new("TextButton")
+local Emoji_7 = Instance.new("TextButton")
+local Emoji_8 = Instance.new("TextButton")
+local Emoji_9 = Instance.new("TextButton")
+local Emoji_10 = Instance.new("TextButton")
+local Emoji_11 = Instance.new("TextButton")
+local Emoji_12 = Instance.new("TextButton")
+local Emoji_13 = Instance.new("TextButton")
+local Emoji_14 = Instance.new("TextButton")
+local Emoji_15 = Instance.new("TextButton")
+local Emoji_16 = Instance.new("TextButton")
+local Emoji_17 = Instance.new("TextButton")
+local Emoji_18 = Instance.new("TextButton")
+local Emoji_19 = Instance.new("TextButton")
+local Emoji_20 = Instance.new("TextButton")
+local Emoji_21 = Instance.new("TextButton")
+local Emoji_22 = Instance.new("TextButton")
+local Emoji_23 = Instance.new("TextButton")
+local Emoji_24 = Instance.new("TextButton")
+local Emoji_25 = Instance.new("TextButton")
+local Emoji_26 = Instance.new("TextButton")
+local Emoji_27 = Instance.new("TextButton")
+local Emoji_28 = Instance.new("TextButton")
+local Emoji_29 = Instance.new("TextButton")
+local Emoji_30 = Instance.new("TextButton")
+local Emoji_31 = Instance.new("TextButton")
+local Emoji_32 = Instance.new("TextButton")
+local Emoji_33 = Instance.new("TextButton")
+local Emoji_34 = Instance.new("TextButton")
+local Emoji_35 = Instance.new("TextButton")
+local Emoji_36 = Instance.new("TextButton")
+local Emoji_37 = Instance.new("TextButton")
+local Emoji_38 = Instance.new("TextButton")
+local Emoji_39 = Instance.new("TextButton")
+local Emoji_40 = Instance.new("TextButton")
+local Emoji_41 = Instance.new("TextButton")
+local Emoji_42 = Instance.new("TextButton")
+local Emoji_43 = Instance.new("TextButton")
+local Emoji_44 = Instance.new("TextButton")
+local Emoji_45 = Instance.new("TextButton")
+local Emoji_46 = Instance.new("TextButton")
+local Emoji_47 = Instance.new("TextButton")
+local Emoji_48 = Instance.new("TextButton")
+local Emoji_49 = Instance.new("TextButton")
+local Emoji_50 = Instance.new("TextButton")
+local Emoji_51 = Instance.new("TextButton")
+local Emoji_52 = Instance.new("TextButton")
+local Emoji_53 = Instance.new("TextButton")
+local Emoji_54 = Instance.new("TextButton")
+local Emoji_55 = Instance.new("TextButton")
+local Emoji_56 = Instance.new("TextButton")
+local Emoji_57 = Instance.new("TextButton")
+local Emoji_58 = Instance.new("TextButton")
+local Emoji_59 = Instance.new("TextButton")
+local Emoji_60 = Instance.new("TextButton")
+local Emoji_61 = Instance.new("TextButton")
+local Emoji_62 = Instance.new("TextButton")
+local Emoji_63 = Instance.new("TextButton")
+local Emoji_64 = Instance.new("TextButton")
+local Emoji_65 = Instance.new("TextButton")
+local Emoji_66 = Instance.new("TextButton")
+local Emoji_67 = Instance.new("TextButton")
+local Emoji_68 = Instance.new("TextButton")
+local Emoji_69 = Instance.new("TextButton")
+local Emoji_70 = Instance.new("TextButton")
+local Emoji_71 = Instance.new("TextButton")
+local Emoji_72 = Instance.new("TextButton")
+local Emoji_73 = Instance.new("TextButton")
+local Emoji_74 = Instance.new("TextButton")
+local Emoji_75 = Instance.new("TextButton")
+local Emoji_76 = Instance.new("TextButton")
+local Emoji_77 = Instance.new("TextButton")
+local Emoji_78 = Instance.new("TextButton")
+local Emoji_79 = Instance.new("TextButton")
+local Emoji_80 = Instance.new("TextButton")
+local Emoji_81 = Instance.new("TextButton")
+local Emoji_82 = Instance.new("TextButton")
+local Emoji_83 = Instance.new("TextButton")
+local Emoji_84 = Instance.new("TextButton")
+local Emoji_85 = Instance.new("TextButton")
+local Emoji_86 = Instance.new("TextButton")
+local Emoji_87 = Instance.new("TextButton")
+local Emoji_88 = Instance.new("TextButton")
+local Emoji_89 = Instance.new("TextButton")
+local Emoji_90 = Instance.new("TextButton")
+local Emoji_91 = Instance.new("TextButton")
+local Emoji_92 = Instance.new("TextButton")
+local Emoji_93 = Instance.new("TextButton")
+local Emoji_94 = Instance.new("TextButton")
+local Emoji_95 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Emoji_96 = Instance.new("TextButton")
+local image_3 = Instance.new("ImageLabel")
+local Open = Instance.new("TextButton")
+local image_4 = Instance.new("ImageLabel")
+local Settings_2 = Instance.new("Frame")
+local RainbowTxt = Instance.new("TextLabel")
+local RainbowButton = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Back = Instance.new("TextButton")
+local Send_Roundify_2px_3 = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame.Position = UDim2.new(0.169346198, 0, 0.285953164, 0)
+Frame.Size = UDim2.new(0, 616, 0, 363)
+
+MessageHolder.Name = "MessageHolder"
+MessageHolder.Parent = Frame
+MessageHolder.Active = true
+MessageHolder.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+MessageHolder.BorderColor3 = Color3.fromRGB(43, 43, 43)
+MessageHolder.BorderSizePixel = 0
+MessageHolder.Position = UDim2.new(0.0393659435, 0, 0.187350199, 0)
+MessageHolder.Size = UDim2.new(0, 567, 0, 198)
+MessageHolder.ScrollBarThickness = 1
+
+Placeholder.Name = "Placeholder"
+Placeholder.Parent = MessageHolder
+Placeholder.BackgroundColor3 = Color3.fromRGB(11, 11, 11)
+Placeholder.BackgroundTransparency = 0.900
+Placeholder.Position = UDim2.new(0, 0, 0.87062937, 0)
+Placeholder.Size = UDim2.new(1, 0, 0, 37)
+Placeholder.Visible = false
+
+Username.Name = "Username"
+Username.Parent = Placeholder
+Username.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Username.BackgroundTransparency = 0.900
+Username.Size = UDim2.new(0.31407094, 0, 1, 0)
+Username.Font = Enum.Font.Cartoon
+Username.Text = "[username]:"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextScaled = true
+Username.TextSize = 20.000
+Username.TextWrapped = true
+
+Message.Name = "Message"
+Message.Parent = Placeholder
+Message.Active = true
+Message.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Message.BackgroundTransparency = 0.900
+Message.Position = UDim2.new(0.32465294, 0, 0, 0)
+Message.Size = UDim2.new(0.675347149, 0, 1, 0)
+Message.Font = Enum.Font.Cartoon
+Message.Text = "this is my message"
+Message.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message.TextSize = 18.000
+Message.TextWrapped = true
+Message.TextXAlignment = Enum.TextXAlignment.Left
+
+UIListLayout.Parent = MessageHolder
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Frame
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.879154086, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 74, 0, 41)
+Minimize.ZIndex = 4
+Minimize.Font = Enum.Font.ArialBold
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextScaled = true
+Minimize.TextSize = 14.000
+Minimize.TextWrapped = true
+
+image.Name = "image"
+image.Parent = Minimize
+image.Active = true
+image.AnchorPoint = Vector2.new(0.5, 0.5)
+image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+image.BackgroundTransparency = 1.000
+image.Position = UDim2.new(0.5, 0, 0.5, 0)
+image.Selectable = true
+image.Size = UDim2.new(1, 0, 1, 0)
+image.ZIndex = 3
+image.Image = "rbxassetid://3570695787"
+image.ImageColor3 = Color3.fromRGB(40, 40, 40)
+image.ScaleType = Enum.ScaleType.Slice
+image.SliceCenter = Rect.new(100, 100, 100, 100)
+image.SliceScale = 0.090
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 616, 0, 47)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "Exo Chat"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Message_2.Name = "Message"
+Message_2.Parent = Frame
+Message_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Message_2.BackgroundTransparency = 1.000
+Message_2.BorderSizePixel = 0
+Message_2.Position = UDim2.new(0.0410557538, 0, 0.818593025, 0)
+Message_2.Size = UDim2.new(0, 488, 0, 62)
+Message_2.ZIndex = 5
+Message_2.Font = Enum.Font.Cartoon
+Message_2.PlaceholderText = "Press \\ to focus, or click here to focus."
+Message_2.Text = ""
+Message_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message_2.TextSize = 20.000
+Message_2.TextWrapped = true
+Message_2.TextXAlignment = Enum.TextXAlignment.Left
+Message_2.TextYAlignment = Enum.TextYAlignment.Top
+
+image_2.Name = "image"
+image_2.Parent = Message_2
+image_2.Active = true
+image_2.AnchorPoint = Vector2.new(0.5, 0.5)
+image_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+image_2.BackgroundTransparency = 1.000
+image_2.Position = UDim2.new(0.494662166, 0, 0.395161301, 0)
+image_2.Selectable = true
+image_2.Size = UDim2.new(0.993590355, 0, 0.983870327, 0)
+image_2.Image = "rbxassetid://3570695787"
+image_2.ImageColor3 = Color3.fromRGB(39, 39, 39)
+image_2.ScaleType = Enum.ScaleType.Slice
+image_2.SliceCenter = Rect.new(100, 100, 100, 100)
+image_2.SliceScale = 0.060
+
+Length.Name = "Length"
+Length.Parent = Message_2
+Length.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Length.BackgroundTransparency = 1.000
+Length.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Length.Position = UDim2.new(0.850243449, 0, 0.5, 0)
+Length.Size = UDim2.new(0, 68, 0, 24)
+Length.ZIndex = 5
+Length.Font = Enum.Font.ArialBold
+Length.Text = "0/80"
+Length.TextColor3 = Color3.fromRGB(100, 100, 100)
+Length.TextSize = 20.000
+Length.TextTransparency = 0.100
+
+Settings.Name = "Settings"
+Settings.Parent = Frame
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.846000016, 0, 0.88499999, 0)
+Settings.Size = UDim2.new(0, 88, 0, 36)
+Settings.ZIndex = 2
+Settings.Font = Enum.Font.ArialBold
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 24.000
+Settings.TextWrapped = true
+
+Send_Roundify_2px.Name = "Send_Roundify_2px"
+Send_Roundify_2px.Parent = Settings
+Send_Roundify_2px.Active = true
+Send_Roundify_2px.AnchorPoint = Vector2.new(0.5, 0.5)
+Send_Roundify_2px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send_Roundify_2px.BackgroundTransparency = 1.000
+Send_Roundify_2px.Position = UDim2.new(0.5, 0, 0.5, 0)
+Send_Roundify_2px.Selectable = true
+Send_Roundify_2px.Size = UDim2.new(1, 0, 1, 0)
+Send_Roundify_2px.Image = "rbxassetid://3570695787"
+Send_Roundify_2px.ImageColor3 = Color3.fromRGB(0, 0, 191)
+Send_Roundify_2px.ScaleType = Enum.ScaleType.Slice
+Send_Roundify_2px.SliceCenter = Rect.new(100, 100, 100, 100)
+Send_Roundify_2px.SliceScale = 0.090
+
+Send.Name = "Send"
+Send.Parent = Frame
+Send.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send.BackgroundTransparency = 1.000
+Send.BorderSizePixel = 0
+Send.Position = UDim2.new(0.846000016, 0, 0.763999999, 0)
+Send.Size = UDim2.new(0, 88, 0, 36)
+Send.ZIndex = 2
+Send.Font = Enum.Font.ArialBold
+Send.Text = "Send"
+Send.TextColor3 = Color3.fromRGB(255, 255, 255)
+Send.TextSize = 29.000
+Send.TextWrapped = true
+
+Send_Roundify_2px_2.Name = "Send_Roundify_2px"
+Send_Roundify_2px_2.Parent = Send
+Send_Roundify_2px_2.Active = true
+Send_Roundify_2px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Send_Roundify_2px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send_Roundify_2px_2.BackgroundTransparency = 1.000
+Send_Roundify_2px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Send_Roundify_2px_2.Selectable = true
+Send_Roundify_2px_2.Size = UDim2.new(1, 0, 1, 0)
+Send_Roundify_2px_2.Image = "rbxassetid://3570695787"
+Send_Roundify_2px_2.ImageColor3 = Color3.fromRGB(0, 0, 191)
+Send_Roundify_2px_2.ScaleType = Enum.ScaleType.Slice
+Send_Roundify_2px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Send_Roundify_2px_2.SliceScale = 0.090
+
+EmojiTab.Name = "EmojiTab"
+EmojiTab.Parent = Frame
+EmojiTab.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+EmojiTab.BorderSizePixel = 0
+EmojiTab.Position = UDim2.new(1.06392097, 10, 0.142411679, 25)
+EmojiTab.Size = UDim2.new(0, 200, 0, 200)
+EmojiTab.Visible = false
+
+List.Name = "List"
+List.Parent = EmojiTab
+List.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+List.BackgroundTransparency = 1.000
+List.BorderSizePixel = 0
+List.Size = UDim2.new(0, 200, 0, 200)
+List.CanvasSize = UDim2.new(0, 0, 4, 0)
+List.ScrollBarThickness = 0
+
+Emoji.Name = "Emoji"
+Emoji.Parent = List
+Emoji.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji.BackgroundTransparency = 1.000
+Emoji.Position = UDim2.new(-0.0249999762, 5, 0.0312499963, 0)
+Emoji.Size = UDim2.new(0, 40, 0, 40)
+Emoji.Font = Enum.Font.SourceSans
+Emoji.Text = "🙂"
+Emoji.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji.TextSize = 31.000
+
+Emoji_2.Name = "Emoji"
+Emoji_2.Parent = List
+Emoji_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_2.BackgroundTransparency = 1.000
+Emoji_2.Position = UDim2.new(0.175000027, 5, 0.0312499963, 0)
+Emoji_2.Size = UDim2.new(0, 40, 0, 40)
+Emoji_2.Font = Enum.Font.SourceSans
+Emoji_2.Text = "😀"
+Emoji_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_2.TextSize = 31.000
+
+Emoji_3.Name = "Emoji"
+Emoji_3.Parent = List
+Emoji_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_3.BackgroundTransparency = 1.000
+Emoji_3.Position = UDim2.new(0.37500003, 5, 0.0312499963, 0)
+Emoji_3.Size = UDim2.new(0, 40, 0, 40)
+Emoji_3.Font = Enum.Font.SourceSans
+Emoji_3.Text = "😁"
+Emoji_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_3.TextSize = 31.000
+
+Emoji_4.Name = "Emoji"
+Emoji_4.Parent = List
+Emoji_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_4.BackgroundTransparency = 1.000
+Emoji_4.Position = UDim2.new(0.575000048, 5, 0.0312499963, 0)
+Emoji_4.Size = UDim2.new(0, 40, 0, 40)
+Emoji_4.Font = Enum.Font.SourceSans
+Emoji_4.Text = "😂"
+Emoji_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_4.TextSize = 31.000
+
+Emoji_5.Name = "Emoji"
+Emoji_5.Parent = List
+Emoji_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_5.BackgroundTransparency = 1.000
+Emoji_5.Position = UDim2.new(0.775000036, 5, 0.0312499963, 0)
+Emoji_5.Size = UDim2.new(0, 40, 0, 40)
+Emoji_5.Font = Enum.Font.SourceSans
+Emoji_5.Text = "🤣"
+Emoji_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_5.TextSize = 31.000
+
+Emoji_6.Name = "Emoji"
+Emoji_6.Parent = List
+Emoji_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_6.BackgroundTransparency = 1.000
+Emoji_6.Position = UDim2.new(-0.0249999762, 5, 0.0812500045, 0)
+Emoji_6.Size = UDim2.new(0, 40, 0, 40)
+Emoji_6.Font = Enum.Font.SourceSans
+Emoji_6.Text = "😃"
+Emoji_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_6.TextSize = 31.000
+
+Emoji_7.Name = "Emoji"
+Emoji_7.Parent = List
+Emoji_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_7.BackgroundTransparency = 1.000
+Emoji_7.Position = UDim2.new(0.175000027, 5, 0.0812500045, 0)
+Emoji_7.Size = UDim2.new(0, 40, 0, 40)
+Emoji_7.Font = Enum.Font.SourceSans
+Emoji_7.Text = "😄"
+Emoji_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_7.TextSize = 31.000
+
+Emoji_8.Name = "Emoji"
+Emoji_8.Parent = List
+Emoji_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_8.BackgroundTransparency = 1.000
+Emoji_8.Position = UDim2.new(0.37500003, 5, 0.0812500045, 0)
+Emoji_8.Size = UDim2.new(0, 40, 0, 40)
+Emoji_8.Font = Enum.Font.SourceSans
+Emoji_8.Text = "😅"
+Emoji_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_8.TextSize = 31.000
+
+Emoji_9.Name = "Emoji"
+Emoji_9.Parent = List
+Emoji_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_9.BackgroundTransparency = 1.000
+Emoji_9.Position = UDim2.new(0.575000048, 5, 0.0812500045, 0)
+Emoji_9.Size = UDim2.new(0, 40, 0, 40)
+Emoji_9.Font = Enum.Font.SourceSans
+Emoji_9.Text = "😆"
+Emoji_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_9.TextSize = 31.000
+
+Emoji_10.Name = "Emoji"
+Emoji_10.Parent = List
+Emoji_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_10.BackgroundTransparency = 1.000
+Emoji_10.Position = UDim2.new(0.775000036, 5, 0.0812500045, 0)
+Emoji_10.Size = UDim2.new(0, 40, 0, 40)
+Emoji_10.Font = Enum.Font.SourceSans
+Emoji_10.Text = "😉"
+Emoji_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_10.TextSize = 31.000
+
+Emoji_11.Name = "Emoji"
+Emoji_11.Parent = List
+Emoji_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_11.BackgroundTransparency = 1.000
+Emoji_11.Position = UDim2.new(-0.0249999762, 5, 0.131250009, 0)
+Emoji_11.Size = UDim2.new(0, 40, 0, 40)
+Emoji_11.Font = Enum.Font.SourceSans
+Emoji_11.Text = "😊"
+Emoji_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_11.TextSize = 31.000
+
+Emoji_12.Name = "Emoji"
+Emoji_12.Parent = List
+Emoji_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_12.BackgroundTransparency = 1.000
+Emoji_12.Position = UDim2.new(0.175000027, 5, 0.131250009, 0)
+Emoji_12.Size = UDim2.new(0, 40, 0, 40)
+Emoji_12.Font = Enum.Font.SourceSans
+Emoji_12.Text = "😋"
+Emoji_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_12.TextSize = 31.000
+
+Emoji_13.Name = "Emoji"
+Emoji_13.Parent = List
+Emoji_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_13.BackgroundTransparency = 1.000
+Emoji_13.Position = UDim2.new(0.37500003, 5, 0.131250009, 0)
+Emoji_13.Size = UDim2.new(0, 40, 0, 40)
+Emoji_13.Font = Enum.Font.SourceSans
+Emoji_13.Text = "😎"
+Emoji_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_13.TextSize = 31.000
+
+Emoji_14.Name = "Emoji"
+Emoji_14.Parent = List
+Emoji_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_14.BackgroundTransparency = 1.000
+Emoji_14.Position = UDim2.new(0.575000048, 5, 0.131250009, 0)
+Emoji_14.Size = UDim2.new(0, 40, 0, 40)
+Emoji_14.Font = Enum.Font.SourceSans
+Emoji_14.Text = "😍"
+Emoji_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_14.TextSize = 31.000
+
+Emoji_15.Name = "Emoji"
+Emoji_15.Parent = List
+Emoji_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_15.BackgroundTransparency = 1.000
+Emoji_15.Position = UDim2.new(0.775000036, 5, 0.131250009, 0)
+Emoji_15.Size = UDim2.new(0, 40, 0, 40)
+Emoji_15.Font = Enum.Font.SourceSans
+Emoji_15.Text = "☺️"
+Emoji_15.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_15.TextSize = 31.000
+
+Emoji_16.Name = "Emoji"
+Emoji_16.Parent = List
+Emoji_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_16.BackgroundTransparency = 1.000
+Emoji_16.Position = UDim2.new(-0.0249999762, 5, 0.181250006, 0)
+Emoji_16.Size = UDim2.new(0, 40, 0, 40)
+Emoji_16.Font = Enum.Font.SourceSans
+Emoji_16.Text = "🤗"
+Emoji_16.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_16.TextSize = 31.000
+
+Emoji_17.Name = "Emoji"
+Emoji_17.Parent = List
+Emoji_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_17.BackgroundTransparency = 1.000
+Emoji_17.Position = UDim2.new(0.575000048, 5, 0.181250006, 0)
+Emoji_17.Size = UDim2.new(0, 40, 0, 40)
+Emoji_17.Font = Enum.Font.SourceSans
+Emoji_17.Text = "🤨"
+Emoji_17.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_17.TextSize = 31.000
+
+Emoji_18.Name = "Emoji"
+Emoji_18.Parent = List
+Emoji_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_18.BackgroundTransparency = 1.000
+Emoji_18.Position = UDim2.new(0.775000036, 5, 0.181250006, 0)
+Emoji_18.Size = UDim2.new(0, 40, 0, 40)
+Emoji_18.Font = Enum.Font.SourceSans
+Emoji_18.Text = "😐"
+Emoji_18.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_18.TextSize = 31.000
+
+Emoji_19.Name = "Emoji"
+Emoji_19.Parent = List
+Emoji_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_19.BackgroundTransparency = 1.000
+Emoji_19.Position = UDim2.new(0.175000027, 5, 0.181250006, 0)
+Emoji_19.Size = UDim2.new(0, 40, 0, 40)
+Emoji_19.Font = Enum.Font.SourceSans
+Emoji_19.Text = "🤩"
+Emoji_19.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_19.TextSize = 31.000
+
+Emoji_20.Name = "Emoji"
+Emoji_20.Parent = List
+Emoji_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_20.BackgroundTransparency = 1.000
+Emoji_20.Position = UDim2.new(0.37500003, 5, 0.181250006, 0)
+Emoji_20.Size = UDim2.new(0, 40, 0, 40)
+Emoji_20.Font = Enum.Font.SourceSans
+Emoji_20.Text = "🤔"
+Emoji_20.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_20.TextSize = 31.000
+
+Emoji_21.Name = "Emoji"
+Emoji_21.Parent = List
+Emoji_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_21.BackgroundTransparency = 1.000
+Emoji_21.Position = UDim2.new(0.575000048, 5, 0.231250003, 0)
+Emoji_21.Size = UDim2.new(0, 40, 0, 40)
+Emoji_21.Font = Enum.Font.SourceSans
+Emoji_21.Text = "😏"
+Emoji_21.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_21.TextSize = 31.000
+
+Emoji_22.Name = "Emoji"
+Emoji_22.Parent = List
+Emoji_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_22.BackgroundTransparency = 1.000
+Emoji_22.Position = UDim2.new(0.775000036, 5, 0.231250003, 0)
+Emoji_22.Size = UDim2.new(0, 40, 0, 40)
+Emoji_22.Font = Enum.Font.SourceSans
+Emoji_22.Text = "😥"
+Emoji_22.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_22.TextSize = 31.000
+
+Emoji_23.Name = "Emoji"
+Emoji_23.Parent = List
+Emoji_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_23.BackgroundTransparency = 1.000
+Emoji_23.Position = UDim2.new(-0.0249999762, 5, 0.231250003, 0)
+Emoji_23.Size = UDim2.new(0, 40, 0, 40)
+Emoji_23.Font = Enum.Font.SourceSans
+Emoji_23.Text = "😑"
+Emoji_23.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_23.TextSize = 31.000
+
+Emoji_24.Name = "Emoji"
+Emoji_24.Parent = List
+Emoji_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_24.BackgroundTransparency = 1.000
+Emoji_24.Position = UDim2.new(0.175000027, 5, 0.231250003, 0)
+Emoji_24.Size = UDim2.new(0, 40, 0, 40)
+Emoji_24.Font = Enum.Font.SourceSans
+Emoji_24.Text = "😶"
+Emoji_24.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_24.TextSize = 31.000
+
+Emoji_25.Name = "Emoji"
+Emoji_25.Parent = List
+Emoji_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_25.BackgroundTransparency = 1.000
+Emoji_25.Position = UDim2.new(0.37500003, 5, 0.231250003, 0)
+Emoji_25.Size = UDim2.new(0, 40, 0, 40)
+Emoji_25.Font = Enum.Font.SourceSans
+Emoji_25.Text = "🙄"
+Emoji_25.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_25.TextSize = 31.000
+
+Emoji_26.Name = "Emoji"
+Emoji_26.Parent = List
+Emoji_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_26.BackgroundTransparency = 1.000
+Emoji_26.Position = UDim2.new(0.575000048, 5, 0.28124994, 0)
+Emoji_26.Size = UDim2.new(0, 40, 0, 40)
+Emoji_26.Font = Enum.Font.SourceSans
+Emoji_26.Text = "😪"
+Emoji_26.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_26.TextSize = 31.000
+
+Emoji_27.Name = "Emoji"
+Emoji_27.Parent = List
+Emoji_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_27.BackgroundTransparency = 1.000
+Emoji_27.Position = UDim2.new(0.775000036, 5, 0.28124994, 0)
+Emoji_27.Size = UDim2.new(0, 40, 0, 40)
+Emoji_27.Font = Enum.Font.SourceSans
+Emoji_27.Text = "😫"
+Emoji_27.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_27.TextSize = 31.000
+
+Emoji_28.Name = "Emoji"
+Emoji_28.Parent = List
+Emoji_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_28.BackgroundTransparency = 1.000
+Emoji_28.Position = UDim2.new(-0.0249999762, 5, 0.28124994, 0)
+Emoji_28.Size = UDim2.new(0, 40, 0, 40)
+Emoji_28.Font = Enum.Font.SourceSans
+Emoji_28.Text = "😮"
+Emoji_28.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_28.TextSize = 31.000
+
+Emoji_29.Name = "Emoji"
+Emoji_29.Parent = List
+Emoji_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_29.BackgroundTransparency = 1.000
+Emoji_29.Position = UDim2.new(0.175000027, 5, 0.28124994, 0)
+Emoji_29.Size = UDim2.new(0, 40, 0, 40)
+Emoji_29.Font = Enum.Font.SourceSans
+Emoji_29.Text = "🤐"
+Emoji_29.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_29.TextSize = 31.000
+
+Emoji_30.Name = "Emoji"
+Emoji_30.Parent = List
+Emoji_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_30.BackgroundTransparency = 1.000
+Emoji_30.Position = UDim2.new(0.37500003, 5, 0.28124994, 0)
+Emoji_30.Size = UDim2.new(0, 40, 0, 40)
+Emoji_30.Font = Enum.Font.SourceSans
+Emoji_30.Text = "😯"
+Emoji_30.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_30.TextSize = 31.000
+
+Emoji_31.Name = "Emoji"
+Emoji_31.Parent = List
+Emoji_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_31.BackgroundTransparency = 1.000
+Emoji_31.Position = UDim2.new(0.575000048, 5, 0.329999983, 0)
+Emoji_31.Size = UDim2.new(0, 40, 0, 40)
+Emoji_31.Font = Enum.Font.SourceSans
+Emoji_31.Text = "😜"
+Emoji_31.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_31.TextSize = 31.000
+
+Emoji_32.Name = "Emoji"
+Emoji_32.Parent = List
+Emoji_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_32.BackgroundTransparency = 1.000
+Emoji_32.Position = UDim2.new(0.775000036, 5, 0.329999983, 0)
+Emoji_32.Size = UDim2.new(0, 40, 0, 40)
+Emoji_32.Font = Enum.Font.SourceSans
+Emoji_32.Text = "😝"
+Emoji_32.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_32.TextSize = 31.000
+
+Emoji_33.Name = "Emoji"
+Emoji_33.Parent = List
+Emoji_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_33.BackgroundTransparency = 1.000
+Emoji_33.Position = UDim2.new(-0.0249999762, 5, 0.329999983, 0)
+Emoji_33.Size = UDim2.new(0, 40, 0, 40)
+Emoji_33.Font = Enum.Font.SourceSans
+Emoji_33.Text = "😴"
+Emoji_33.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_33.TextSize = 31.000
+
+Emoji_34.Name = "Emoji"
+Emoji_34.Parent = List
+Emoji_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_34.BackgroundTransparency = 1.000
+Emoji_34.Position = UDim2.new(0.175000027, 5, 0.329999983, 0)
+Emoji_34.Size = UDim2.new(0, 40, 0, 40)
+Emoji_34.Font = Enum.Font.SourceSans
+Emoji_34.Text = "😌"
+Emoji_34.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_34.TextSize = 31.000
+
+Emoji_35.Name = "Emoji"
+Emoji_35.Parent = List
+Emoji_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_35.BackgroundTransparency = 1.000
+Emoji_35.Position = UDim2.new(0.37500003, 5, 0.329999983, 0)
+Emoji_35.Size = UDim2.new(0, 40, 0, 40)
+Emoji_35.Font = Enum.Font.SourceSans
+Emoji_35.Text = "😛"
+Emoji_35.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_35.TextSize = 31.000
+
+Emoji_36.Name = "Emoji"
+Emoji_36.Parent = List
+Emoji_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_36.BackgroundTransparency = 1.000
+Emoji_36.Position = UDim2.new(0.575000048, 5, 0.380000025, 0)
+Emoji_36.Size = UDim2.new(0, 40, 0, 40)
+Emoji_36.Font = Enum.Font.SourceSans
+Emoji_36.Text = "😔"
+Emoji_36.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_36.TextSize = 31.000
+
+Emoji_37.Name = "Emoji"
+Emoji_37.Parent = List
+Emoji_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_37.BackgroundTransparency = 1.000
+Emoji_37.Position = UDim2.new(0.775000036, 5, 0.380000025, 0)
+Emoji_37.Size = UDim2.new(0, 40, 0, 40)
+Emoji_37.Font = Enum.Font.SourceSans
+Emoji_37.Text = "😕"
+Emoji_37.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_37.TextSize = 31.000
+
+Emoji_38.Name = "Emoji"
+Emoji_38.Parent = List
+Emoji_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_38.BackgroundTransparency = 1.000
+Emoji_38.Position = UDim2.new(-0.0249999762, 5, 0.380000025, 0)
+Emoji_38.Size = UDim2.new(0, 40, 0, 40)
+Emoji_38.Font = Enum.Font.SourceSans
+Emoji_38.Text = "🤤"
+Emoji_38.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_38.TextSize = 31.000
+
+Emoji_39.Name = "Emoji"
+Emoji_39.Parent = List
+Emoji_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_39.BackgroundTransparency = 1.000
+Emoji_39.Position = UDim2.new(0.175000027, 5, 0.380000025, 0)
+Emoji_39.Size = UDim2.new(0, 40, 0, 40)
+Emoji_39.Font = Enum.Font.SourceSans
+Emoji_39.Text = "😒"
+Emoji_39.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_39.TextSize = 31.000
+
+Emoji_40.Name = "Emoji"
+Emoji_40.Parent = List
+Emoji_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_40.BackgroundTransparency = 1.000
+Emoji_40.Position = UDim2.new(0.37500003, 5, 0.380000025, 0)
+Emoji_40.Size = UDim2.new(0, 40, 0, 40)
+Emoji_40.Font = Enum.Font.SourceSans
+Emoji_40.Text = "😓"
+Emoji_40.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_40.TextSize = 31.000
+
+Emoji_41.Name = "Emoji"
+Emoji_41.Parent = List
+Emoji_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_41.BackgroundTransparency = 1.000
+Emoji_41.Position = UDim2.new(0.575000048, 5, 0.430000007, 0)
+Emoji_41.Size = UDim2.new(0, 40, 0, 40)
+Emoji_41.Font = Enum.Font.SourceSans
+Emoji_41.Text = "☹️"
+Emoji_41.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_41.TextSize = 31.000
+
+Emoji_42.Name = "Emoji"
+Emoji_42.Parent = List
+Emoji_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_42.BackgroundTransparency = 1.000
+Emoji_42.Position = UDim2.new(0.775000036, 5, 0.430000007, 0)
+Emoji_42.Size = UDim2.new(0, 40, 0, 40)
+Emoji_42.Font = Enum.Font.SourceSans
+Emoji_42.Text = "🙁"
+Emoji_42.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_42.TextSize = 31.000
+
+Emoji_43.Name = "Emoji"
+Emoji_43.Parent = List
+Emoji_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_43.BackgroundTransparency = 1.000
+Emoji_43.Position = UDim2.new(-0.0249999762, 5, 0.430000007, 0)
+Emoji_43.Size = UDim2.new(0, 40, 0, 40)
+Emoji_43.Font = Enum.Font.SourceSans
+Emoji_43.Text = "🙃"
+Emoji_43.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_43.TextSize = 31.000
+
+Emoji_44.Name = "Emoji"
+Emoji_44.Parent = List
+Emoji_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_44.BackgroundTransparency = 1.000
+Emoji_44.Position = UDim2.new(0.175000027, 5, 0.430000007, 0)
+Emoji_44.Size = UDim2.new(0, 40, 0, 40)
+Emoji_44.Font = Enum.Font.SourceSans
+Emoji_44.Text = "🤑"
+Emoji_44.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_44.TextSize = 31.000
+
+Emoji_45.Name = "Emoji"
+Emoji_45.Parent = List
+Emoji_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_45.BackgroundTransparency = 1.000
+Emoji_45.Position = UDim2.new(0.37500003, 5, 0.430000007, 0)
+Emoji_45.Size = UDim2.new(0, 40, 0, 40)
+Emoji_45.Font = Enum.Font.SourceSans
+Emoji_45.Text = "😲"
+Emoji_45.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_45.TextSize = 31.000
+
+Emoji_46.Name = "Emoji"
+Emoji_46.Parent = List
+Emoji_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_46.BackgroundTransparency = 1.000
+Emoji_46.Position = UDim2.new(0.575000048, 5, 0.47875005, 0)
+Emoji_46.Size = UDim2.new(0, 40, 0, 40)
+Emoji_46.Font = Enum.Font.SourceSans
+Emoji_46.Text = "😤"
+Emoji_46.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_46.TextSize = 31.000
+
+Emoji_47.Name = "Emoji"
+Emoji_47.Parent = List
+Emoji_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_47.BackgroundTransparency = 1.000
+Emoji_47.Position = UDim2.new(0.775000036, 5, 0.47875005, 0)
+Emoji_47.Size = UDim2.new(0, 40, 0, 40)
+Emoji_47.Font = Enum.Font.SourceSans
+Emoji_47.Text = "😢"
+Emoji_47.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_47.TextSize = 31.000
+
+Emoji_48.Name = "Emoji"
+Emoji_48.Parent = List
+Emoji_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_48.BackgroundTransparency = 1.000
+Emoji_48.Position = UDim2.new(-0.0249999762, 5, 0.47875005, 0)
+Emoji_48.Size = UDim2.new(0, 40, 0, 40)
+Emoji_48.Font = Enum.Font.SourceSans
+Emoji_48.Text = "😖"
+Emoji_48.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_48.TextSize = 31.000
+
+Emoji_49.Name = "Emoji"
+Emoji_49.Parent = List
+Emoji_49.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_49.BackgroundTransparency = 1.000
+Emoji_49.Position = UDim2.new(0.175000027, 5, 0.47875005, 0)
+Emoji_49.Size = UDim2.new(0, 40, 0, 40)
+Emoji_49.Font = Enum.Font.SourceSans
+Emoji_49.Text = "😞"
+Emoji_49.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_49.TextSize = 31.000
+
+Emoji_50.Name = "Emoji"
+Emoji_50.Parent = List
+Emoji_50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_50.BackgroundTransparency = 1.000
+Emoji_50.Position = UDim2.new(0.37500003, 5, 0.47875005, 0)
+Emoji_50.Size = UDim2.new(0, 40, 0, 40)
+Emoji_50.Font = Enum.Font.SourceSans
+Emoji_50.Text = "😟"
+Emoji_50.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_50.TextSize = 31.000
+
+Emoji_51.Name = "Emoji"
+Emoji_51.Parent = List
+Emoji_51.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_51.BackgroundTransparency = 1.000
+Emoji_51.Position = UDim2.new(-0.0249999762, 5, 0.528750002, 0)
+Emoji_51.Size = UDim2.new(0, 40, 0, 40)
+Emoji_51.Font = Enum.Font.SourceSans
+Emoji_51.Text = "😭"
+Emoji_51.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_51.TextSize = 31.000
+
+Emoji_52.Name = "Emoji"
+Emoji_52.Parent = List
+Emoji_52.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_52.BackgroundTransparency = 1.000
+Emoji_52.Position = UDim2.new(0.175000027, 5, 0.528750002, 0)
+Emoji_52.Size = UDim2.new(0, 40, 0, 40)
+Emoji_52.Font = Enum.Font.SourceSans
+Emoji_52.Text = "😦"
+Emoji_52.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_52.TextSize = 31.000
+
+Emoji_53.Name = "Emoji"
+Emoji_53.Parent = List
+Emoji_53.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_53.BackgroundTransparency = 1.000
+Emoji_53.Position = UDim2.new(0.37500003, 5, 0.528750002, 0)
+Emoji_53.Size = UDim2.new(0, 40, 0, 40)
+Emoji_53.Font = Enum.Font.SourceSans
+Emoji_53.Text = "😧"
+Emoji_53.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_53.TextSize = 31.000
+
+Emoji_54.Name = "Emoji"
+Emoji_54.Parent = List
+Emoji_54.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_54.BackgroundTransparency = 1.000
+Emoji_54.Position = UDim2.new(0.575000048, 5, 0.528750002, 0)
+Emoji_54.Size = UDim2.new(0, 40, 0, 40)
+Emoji_54.Font = Enum.Font.SourceSans
+Emoji_54.Text = "😨"
+Emoji_54.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_54.TextSize = 31.000
+
+Emoji_55.Name = "Emoji"
+Emoji_55.Parent = List
+Emoji_55.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_55.BackgroundTransparency = 1.000
+Emoji_55.Position = UDim2.new(0.775000036, 5, 0.528750002, 0)
+Emoji_55.Size = UDim2.new(0, 40, 0, 40)
+Emoji_55.Font = Enum.Font.SourceSans
+Emoji_55.Text = "😩"
+Emoji_55.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_55.TextSize = 31.000
+
+Emoji_56.Name = "Emoji"
+Emoji_56.Parent = List
+Emoji_56.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_56.BackgroundTransparency = 1.000
+Emoji_56.Position = UDim2.new(0.175000027, 5, 0.578750014, 0)
+Emoji_56.Size = UDim2.new(0, 40, 0, 40)
+Emoji_56.Font = Enum.Font.SourceSans
+Emoji_56.Text = "😬"
+Emoji_56.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_56.TextSize = 31.000
+
+Emoji_57.Name = "Emoji"
+Emoji_57.Parent = List
+Emoji_57.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_57.BackgroundTransparency = 1.000
+Emoji_57.Position = UDim2.new(-0.0249999762, 5, 0.578750014, 0)
+Emoji_57.Size = UDim2.new(0, 40, 0, 40)
+Emoji_57.Font = Enum.Font.SourceSans
+Emoji_57.Text = "🤯"
+Emoji_57.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_57.TextSize = 31.000
+
+Emoji_58.Name = "Emoji"
+Emoji_58.Parent = List
+Emoji_58.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_58.BackgroundTransparency = 1.000
+Emoji_58.Position = UDim2.new(0.37500003, 5, 0.578750014, 0)
+Emoji_58.Size = UDim2.new(0, 40, 0, 40)
+Emoji_58.Font = Enum.Font.SourceSans
+Emoji_58.Text = "😰"
+Emoji_58.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_58.TextSize = 31.000
+
+Emoji_59.Name = "Emoji"
+Emoji_59.Parent = List
+Emoji_59.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_59.BackgroundTransparency = 1.000
+Emoji_59.Position = UDim2.new(0.575000048, 5, 0.578750014, 0)
+Emoji_59.Size = UDim2.new(0, 40, 0, 40)
+Emoji_59.Font = Enum.Font.SourceSans
+Emoji_59.Text = "😱"
+Emoji_59.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_59.TextSize = 31.000
+
+Emoji_60.Name = "Emoji"
+Emoji_60.Parent = List
+Emoji_60.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_60.BackgroundTransparency = 1.000
+Emoji_60.Position = UDim2.new(0.775000036, 5, 0.578750014, 0)
+Emoji_60.Size = UDim2.new(0, 40, 0, 40)
+Emoji_60.Font = Enum.Font.SourceSans
+Emoji_60.Text = "😳"
+Emoji_60.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_60.TextSize = 31.000
+
+Emoji_61.Name = "Emoji"
+Emoji_61.Parent = List
+Emoji_61.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_61.BackgroundTransparency = 1.000
+Emoji_61.Position = UDim2.new(-0.0249999762, 5, 0.628750026, 0)
+Emoji_61.Size = UDim2.new(0, 40, 0, 40)
+Emoji_61.Font = Enum.Font.SourceSans
+Emoji_61.Text = "🤪"
+Emoji_61.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_61.TextSize = 31.000
+
+Emoji_62.Name = "Emoji"
+Emoji_62.Parent = List
+Emoji_62.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_62.BackgroundTransparency = 1.000
+Emoji_62.Position = UDim2.new(0.575000048, 5, 0.628750026, 0)
+Emoji_62.Size = UDim2.new(0, 40, 0, 40)
+Emoji_62.Font = Enum.Font.SourceSans
+Emoji_62.Text = "😠"
+Emoji_62.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_62.TextSize = 31.000
+
+Emoji_63.Name = "Emoji"
+Emoji_63.Parent = List
+Emoji_63.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_63.BackgroundTransparency = 1.000
+Emoji_63.Position = UDim2.new(0.775000036, 5, 0.628750026, 0)
+Emoji_63.Size = UDim2.new(0, 40, 0, 40)
+Emoji_63.Font = Enum.Font.SourceSans
+Emoji_63.Text = "😷"
+Emoji_63.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_63.TextSize = 31.000
+
+Emoji_64.Name = "Emoji"
+Emoji_64.Parent = List
+Emoji_64.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_64.BackgroundTransparency = 1.000
+Emoji_64.Position = UDim2.new(0.175000027, 5, 0.628750026, 0)
+Emoji_64.Size = UDim2.new(0, 40, 0, 40)
+Emoji_64.Font = Enum.Font.SourceSans
+Emoji_64.Text = "😵"
+Emoji_64.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_64.TextSize = 31.000
+
+Emoji_65.Name = "Emoji"
+Emoji_65.Parent = List
+Emoji_65.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_65.BackgroundTransparency = 1.000
+Emoji_65.Position = UDim2.new(0.37500003, 5, 0.628750026, 0)
+Emoji_65.Size = UDim2.new(0, 40, 0, 40)
+Emoji_65.Font = Enum.Font.SourceSans
+Emoji_65.Text = "😡"
+Emoji_65.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_65.TextSize = 31.000
+
+Emoji_66.Name = "Emoji"
+Emoji_66.Parent = List
+Emoji_66.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_66.BackgroundTransparency = 1.000
+Emoji_66.Position = UDim2.new(0.575000048, 5, 0.678750038, 0)
+Emoji_66.Size = UDim2.new(0, 40, 0, 40)
+Emoji_66.Font = Enum.Font.SourceSans
+Emoji_66.Text = "🤮"
+Emoji_66.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_66.TextSize = 31.000
+
+Emoji_67.Name = "Emoji"
+Emoji_67.Parent = List
+Emoji_67.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_67.BackgroundTransparency = 1.000
+Emoji_67.Position = UDim2.new(0.775000036, 5, 0.678750038, 0)
+Emoji_67.Size = UDim2.new(0, 40, 0, 40)
+Emoji_67.Font = Enum.Font.SourceSans
+Emoji_67.Text = "🤧"
+Emoji_67.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_67.TextSize = 31.000
+
+Emoji_68.Name = "Emoji"
+Emoji_68.Parent = List
+Emoji_68.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_68.BackgroundTransparency = 1.000
+Emoji_68.Position = UDim2.new(-0.0249999762, 5, 0.678750038, 0)
+Emoji_68.Size = UDim2.new(0, 40, 0, 40)
+Emoji_68.Font = Enum.Font.SourceSans
+Emoji_68.Text = "🤒"
+Emoji_68.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_68.TextSize = 31.000
+
+Emoji_69.Name = "Emoji"
+Emoji_69.Parent = List
+Emoji_69.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_69.BackgroundTransparency = 1.000
+Emoji_69.Position = UDim2.new(0.175000027, 5, 0.678750038, 0)
+Emoji_69.Size = UDim2.new(0, 40, 0, 40)
+Emoji_69.Font = Enum.Font.SourceSans
+Emoji_69.Text = "🤕"
+Emoji_69.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_69.TextSize = 31.000
+
+Emoji_70.Name = "Emoji"
+Emoji_70.Parent = List
+Emoji_70.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_70.BackgroundTransparency = 1.000
+Emoji_70.Position = UDim2.new(0.37500003, 5, 0.678750038, 0)
+Emoji_70.Size = UDim2.new(0, 40, 0, 40)
+Emoji_70.Font = Enum.Font.SourceSans
+Emoji_70.Text = "🤢"
+Emoji_70.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_70.TextSize = 31.000
+
+Emoji_71.Name = "Emoji"
+Emoji_71.Parent = List
+Emoji_71.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_71.BackgroundTransparency = 1.000
+Emoji_71.Position = UDim2.new(-0.0249999762, 5, 0.72874999, 0)
+Emoji_71.Size = UDim2.new(0, 40, 0, 40)
+Emoji_71.Font = Enum.Font.SourceSans
+Emoji_71.Text = "😇"
+Emoji_71.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_71.TextSize = 31.000
+
+Emoji_72.Name = "Emoji"
+Emoji_72.Parent = List
+Emoji_72.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_72.BackgroundTransparency = 1.000
+Emoji_72.Position = UDim2.new(0.775000036, 5, 0.72874999, 0)
+Emoji_72.Size = UDim2.new(0, 40, 0, 40)
+Emoji_72.Font = Enum.Font.SourceSans
+Emoji_72.Text = "🤫"
+Emoji_72.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_72.TextSize = 31.000
+
+Emoji_73.Name = "Emoji"
+Emoji_73.Parent = List
+Emoji_73.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_73.BackgroundTransparency = 1.000
+Emoji_73.Position = UDim2.new(0.575000048, 5, 0.72874999, 0)
+Emoji_73.Size = UDim2.new(0, 40, 0, 40)
+Emoji_73.Font = Enum.Font.SourceSans
+Emoji_73.Text = "🤥"
+Emoji_73.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_73.TextSize = 31.000
+
+Emoji_74.Name = "Emoji"
+Emoji_74.Parent = List
+Emoji_74.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_74.BackgroundTransparency = 1.000
+Emoji_74.Position = UDim2.new(0.37500003, 5, 0.72874999, 0)
+Emoji_74.Size = UDim2.new(0, 40, 0, 40)
+Emoji_74.Font = Enum.Font.SourceSans
+Emoji_74.Text = "🤡"
+Emoji_74.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_74.TextSize = 31.000
+
+Emoji_75.Name = "Emoji"
+Emoji_75.Parent = List
+Emoji_75.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_75.BackgroundTransparency = 1.000
+Emoji_75.Position = UDim2.new(0.175000027, 5, 0.72874999, 0)
+Emoji_75.Size = UDim2.new(0, 40, 0, 40)
+Emoji_75.Font = Enum.Font.SourceSans
+Emoji_75.Text = "🤠"
+Emoji_75.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_75.TextSize = 31.000
+
+Emoji_76.Name = "Emoji"
+Emoji_76.Parent = List
+Emoji_76.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_76.BackgroundTransparency = 1.000
+Emoji_76.Position = UDim2.new(0.175000027, 5, 0.778750002, 0)
+Emoji_76.Size = UDim2.new(0, 40, 0, 40)
+Emoji_76.Font = Enum.Font.SourceSans
+Emoji_76.Text = "🧐"
+Emoji_76.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_76.TextSize = 31.000
+
+Emoji_77.Name = "Emoji"
+Emoji_77.Parent = List
+Emoji_77.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_77.BackgroundTransparency = 1.000
+Emoji_77.Position = UDim2.new(0.775000036, 5, 0.778750002, 0)
+Emoji_77.Size = UDim2.new(0, 40, 0, 40)
+Emoji_77.Font = Enum.Font.SourceSans
+Emoji_77.Text = "👿"
+Emoji_77.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_77.TextSize = 31.000
+
+Emoji_78.Name = "Emoji"
+Emoji_78.Parent = List
+Emoji_78.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_78.BackgroundTransparency = 1.000
+Emoji_78.Position = UDim2.new(0.575000048, 5, 0.778750002, 0)
+Emoji_78.Size = UDim2.new(0, 40, 0, 40)
+Emoji_78.Font = Enum.Font.SourceSans
+Emoji_78.Text = "😈"
+Emoji_78.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_78.TextSize = 31.000
+
+Emoji_79.Name = "Emoji"
+Emoji_79.Parent = List
+Emoji_79.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_79.BackgroundTransparency = 1.000
+Emoji_79.Position = UDim2.new(-0.0249999762, 5, 0.778750002, 0)
+Emoji_79.Size = UDim2.new(0, 40, 0, 40)
+Emoji_79.Font = Enum.Font.SourceSans
+Emoji_79.Text = "🤭"
+Emoji_79.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_79.TextSize = 31.000
+
+Emoji_80.Name = "Emoji"
+Emoji_80.Parent = List
+Emoji_80.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_80.BackgroundTransparency = 1.000
+Emoji_80.Position = UDim2.new(0.37500003, 5, 0.778750002, 0)
+Emoji_80.Size = UDim2.new(0, 40, 0, 40)
+Emoji_80.Font = Enum.Font.SourceSans
+Emoji_80.Text = "🤓"
+Emoji_80.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_80.TextSize = 31.000
+
+Emoji_81.Name = "Emoji"
+Emoji_81.Parent = List
+Emoji_81.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_81.BackgroundTransparency = 1.000
+Emoji_81.Position = UDim2.new(-0.0249999762, 5, 0.827499986, 0)
+Emoji_81.Size = UDim2.new(0, 40, 0, 40)
+Emoji_81.Font = Enum.Font.SourceSans
+Emoji_81.Text = "👹"
+Emoji_81.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_81.TextSize = 31.000
+
+Emoji_82.Name = "Emoji"
+Emoji_82.Parent = List
+Emoji_82.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_82.BackgroundTransparency = 1.000
+Emoji_82.Position = UDim2.new(0.775000036, 5, 0.827499986, 0)
+Emoji_82.Size = UDim2.new(0, 40, 0, 40)
+Emoji_82.Font = Enum.Font.SourceSans
+Emoji_82.Text = "👽"
+Emoji_82.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_82.TextSize = 31.000
+
+Emoji_83.Name = "Emoji"
+Emoji_83.Parent = List
+Emoji_83.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_83.BackgroundTransparency = 1.000
+Emoji_83.Position = UDim2.new(0.575000048, 5, 0.827499986, 0)
+Emoji_83.Size = UDim2.new(0, 40, 0, 40)
+Emoji_83.Font = Enum.Font.SourceSans
+Emoji_83.Text = "👻"
+Emoji_83.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_83.TextSize = 31.000
+
+Emoji_84.Name = "Emoji"
+Emoji_84.Parent = List
+Emoji_84.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_84.BackgroundTransparency = 1.000
+Emoji_84.Position = UDim2.new(0.37500003, 5, 0.827499986, 0)
+Emoji_84.Size = UDim2.new(0, 40, 0, 40)
+Emoji_84.Font = Enum.Font.SourceSans
+Emoji_84.Text = "💀"
+Emoji_84.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_84.TextSize = 31.000
+
+Emoji_85.Name = "Emoji"
+Emoji_85.Parent = List
+Emoji_85.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_85.BackgroundTransparency = 1.000
+Emoji_85.Position = UDim2.new(0.175000027, 5, 0.827499986, 0)
+Emoji_85.Size = UDim2.new(0, 40, 0, 40)
+Emoji_85.Font = Enum.Font.SourceSans
+Emoji_85.Text = "👺"
+Emoji_85.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_85.TextSize = 31.000
+
+Emoji_86.Name = "Emoji"
+Emoji_86.Parent = List
+Emoji_86.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_86.BackgroundTransparency = 1.000
+Emoji_86.Position = UDim2.new(0.575000048, 5, 0.877500057, 0)
+Emoji_86.Size = UDim2.new(0, 40, 0, 40)
+Emoji_86.Font = Enum.Font.SourceSans
+Emoji_86.Text = "😸"
+Emoji_86.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_86.TextSize = 31.000
+
+Emoji_87.Name = "Emoji"
+Emoji_87.Parent = List
+Emoji_87.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_87.BackgroundTransparency = 1.000
+Emoji_87.Position = UDim2.new(-0.0249999762, 5, 0.877500057, 0)
+Emoji_87.Size = UDim2.new(0, 40, 0, 40)
+Emoji_87.Font = Enum.Font.SourceSans
+Emoji_87.Text = "🤖"
+Emoji_87.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_87.TextSize = 31.000
+
+Emoji_88.Name = "Emoji"
+Emoji_88.Parent = List
+Emoji_88.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_88.BackgroundTransparency = 1.000
+Emoji_88.Position = UDim2.new(0.775000036, 5, 0.877500057, 0)
+Emoji_88.Size = UDim2.new(0, 40, 0, 40)
+Emoji_88.Font = Enum.Font.SourceSans
+Emoji_88.Text = "😹"
+Emoji_88.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_88.TextSize = 31.000
+
+Emoji_89.Name = "Emoji"
+Emoji_89.Parent = List
+Emoji_89.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_89.BackgroundTransparency = 1.000
+Emoji_89.Position = UDim2.new(0.175000027, 5, 0.877500057, 0)
+Emoji_89.Size = UDim2.new(0, 40, 0, 40)
+Emoji_89.Font = Enum.Font.SourceSans
+Emoji_89.Text = "💩"
+Emoji_89.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_89.TextSize = 31.000
+
+Emoji_90.Name = "Emoji"
+Emoji_90.Parent = List
+Emoji_90.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_90.BackgroundTransparency = 1.000
+Emoji_90.Position = UDim2.new(0.37500003, 5, 0.877500057, 0)
+Emoji_90.Size = UDim2.new(0, 40, 0, 40)
+Emoji_90.Font = Enum.Font.SourceSans
+Emoji_90.Text = "😺"
+Emoji_90.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_90.TextSize = 31.000
+
+Emoji_91.Name = "Emoji"
+Emoji_91.Parent = List
+Emoji_91.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_91.BackgroundTransparency = 1.000
+Emoji_91.Position = UDim2.new(0.775000036, 5, 0.92750001, 0)
+Emoji_91.Size = UDim2.new(0, 40, 0, 40)
+Emoji_91.Font = Enum.Font.SourceSans
+Emoji_91.Text = "😾"
+Emoji_91.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_91.TextSize = 31.000
+
+Emoji_92.Name = "Emoji"
+Emoji_92.Parent = List
+Emoji_92.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_92.BackgroundTransparency = 1.000
+Emoji_92.Position = UDim2.new(0.575000048, 5, 0.92750001, 0)
+Emoji_92.Size = UDim2.new(0, 40, 0, 40)
+Emoji_92.Font = Enum.Font.SourceSans
+Emoji_92.Text = "😿"
+Emoji_92.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_92.TextSize = 31.000
+
+Emoji_93.Name = "Emoji"
+Emoji_93.Parent = List
+Emoji_93.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_93.BackgroundTransparency = 1.000
+Emoji_93.Position = UDim2.new(0.175000027, 5, 0.92750001, 0)
+Emoji_93.Size = UDim2.new(0, 40, 0, 40)
+Emoji_93.Font = Enum.Font.SourceSans
+Emoji_93.Text = "😼"
+Emoji_93.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_93.TextSize = 31.000
+
+Emoji_94.Name = "Emoji"
+Emoji_94.Parent = List
+Emoji_94.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_94.BackgroundTransparency = 1.000
+Emoji_94.Position = UDim2.new(-0.0249999762, 5, 0.92750001, 0)
+Emoji_94.Size = UDim2.new(0, 40, 0, 40)
+Emoji_94.Font = Enum.Font.SourceSans
+Emoji_94.Text = "😻"
+Emoji_94.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_94.TextSize = 31.000
+
+Emoji_95.Name = "Emoji"
+Emoji_95.Parent = List
+Emoji_95.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_95.BackgroundTransparency = 1.000
+Emoji_95.Position = UDim2.new(0.37500003, 5, 0.92750001, 0)
+Emoji_95.Size = UDim2.new(0, 40, 0, 40)
+Emoji_95.Font = Enum.Font.SourceSans
+Emoji_95.Text = "🙀"
+Emoji_95.TextColor3 = Color3.fromRGB(0, 0, 0)
+Emoji_95.TextSize = 31.000
+
+TextLabel_2.Parent = List
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, -0.00249999994, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 23)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Emoji's"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+Emoji_96.Name = "Emoji"
+Emoji_96.Parent = Frame
+Emoji_96.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_96.BackgroundTransparency = 1.000
+Emoji_96.BorderSizePixel = 0
+Emoji_96.Position = UDim2.new(0.742790461, 0, 0.00826446246, 0)
+Emoji_96.Size = UDim2.new(0, 77, 0, 41)
+Emoji_96.ZIndex = 4
+Emoji_96.Font = Enum.Font.ArialBold
+Emoji_96.Text = "Emoji"
+Emoji_96.TextColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_96.TextSize = 25.000
+Emoji_96.TextWrapped = true
+
+image_3.Name = "image"
+image_3.Parent = Emoji_96
+image_3.Active = true
+image_3.AnchorPoint = Vector2.new(0.5, 0.5)
+image_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+image_3.BackgroundTransparency = 1.000
+image_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+image_3.Selectable = true
+image_3.Size = UDim2.new(1, 0, 1, 0)
+image_3.ZIndex = 3
+image_3.Image = "rbxassetid://3570695787"
+image_3.ImageColor3 = Color3.fromRGB(40, 40, 40)
+image_3.ScaleType = Enum.ScaleType.Slice
+image_3.SliceCenter = Rect.new(100, 100, 100, 100)
+image_3.SliceScale = 0.090
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(-1.5, 0, 1.5, 0)
+Open.Size = UDim2.new(0, 88, 0, 55)
+Open.ZIndex = 2
+Open.Font = Enum.Font.ArialBold
+Open.Text = "+"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+image_4.Name = "image"
+image_4.Parent = Open
+image_4.Active = true
+image_4.AnchorPoint = Vector2.new(0.5, 0.5)
+image_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+image_4.BackgroundTransparency = 1.000
+image_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+image_4.Selectable = true
+image_4.Size = UDim2.new(1, 0, 1, 0)
+image_4.Image = "rbxassetid://3570695787"
+image_4.ImageColor3 = Color3.fromRGB(42, 42, 42)
+image_4.ScaleType = Enum.ScaleType.Slice
+image_4.SliceCenter = Rect.new(100, 100, 100, 100)
+image_4.SliceScale = 0.090
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = ScreenGui
+Settings_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Settings_2.BorderSizePixel = 0
+Settings_2.Position = UDim2.new(0.246717542, 0, 0.272284269, 0)
+Settings_2.Size = UDim2.new(0, 616, 0, 363)
+Settings_2.Visible = false
+
+RainbowTxt.Name = "RainbowTxt"
+RainbowTxt.Parent = Settings_2
+RainbowTxt.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+RainbowTxt.BorderColor3 = Color3.fromRGB(30, 30, 30)
+RainbowTxt.BorderSizePixel = 0
+RainbowTxt.Position = UDim2.new(0.0599716492, 0, 0.342425466, 0)
+RainbowTxt.Size = UDim2.new(0, 187, 0, 46)
+RainbowTxt.Font = Enum.Font.SourceSans
+RainbowTxt.Text = "Rainbow Text"
+RainbowTxt.TextColor3 = Color3.fromRGB(255, 255, 255)
+RainbowTxt.TextScaled = true
+RainbowTxt.TextSize = 14.000
+RainbowTxt.TextWrapped = true
+
+RainbowButton.Name = "RainbowButton"
+RainbowButton.Parent = Settings_2
+RainbowButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+RainbowButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
+RainbowButton.BorderSizePixel = 0
+RainbowButton.Position = UDim2.new(0.0599716492, 0, 0.176543429, 0)
+RainbowButton.Size = UDim2.new(0, 187, 0, 46)
+RainbowButton.Font = Enum.Font.SourceSans
+RainbowButton.Text = "Disabled"
+RainbowButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+RainbowButton.TextSize = 40.000
+RainbowButton.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+
+TextLabel_3.Parent = Settings_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 616, 0, 47)
+TextLabel_3.Font = Enum.Font.Cartoon
+TextLabel_3.Text = "Exo Chat Settings"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Back.Name = "Back"
+Back.Parent = Settings_2
+Back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Back.BackgroundTransparency = 1.000
+Back.BorderSizePixel = 0
+Back.Position = UDim2.new(0.0100399861, 0, 0.866053104, 0)
+Back.Size = UDim2.new(0, 603, 0, 41)
+Back.ZIndex = 2
+Back.Font = Enum.Font.ArialBold
+Back.Text = "Back"
+Back.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back.TextSize = 29.000
+Back.TextWrapped = true
+
+Send_Roundify_2px_3.Name = "Send_Roundify_2px"
+Send_Roundify_2px_3.Parent = Back
+Send_Roundify_2px_3.Active = true
+Send_Roundify_2px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Send_Roundify_2px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Send_Roundify_2px_3.BackgroundTransparency = 1.000
+Send_Roundify_2px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Send_Roundify_2px_3.Selectable = true
+Send_Roundify_2px_3.Size = UDim2.new(1, 0, 1, 0)
+Send_Roundify_2px_3.Image = "rbxassetid://3570695787"
+Send_Roundify_2px_3.ImageColor3 = Color3.fromRGB(0, 0, 191)
+Send_Roundify_2px_3.ScaleType = Enum.ScaleType.Slice
+Send_Roundify_2px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Send_Roundify_2px_3.SliceScale = 0.090
+
+-- Scripts:
+
+local function IFLUND_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local username1 = game.Players.LocalPlayer.Name
+	if username1 == 'WsTPxAlaska' or 'jehad00' then
+		Roles = 'Dev'
 	else
-		Roles = 'MB'
-	end
-end
-
-local a=[[
-I'll never understand skidders :>
-]]print(a)if not syn_checkcaller then error'Unsupported exploit!'end;local b="ws://sadasdsad.momowhaley.repl.co"
---Console Setup
-rconsolename("Exo Launcher Console")
-rconsoleprint('@@BLUE@@')
-rconsoleprint("Welcome to da Exo Launcher Console! (Useless for now) ")
-
---Actual MainStuff
-local socket;
-if syn_checkcaller then
-	socket = syn.websocket.connect(b)
-end
-
-local username = game.Players.LocalPlayer.Name
-local Message = script.Parent.Message
-
-	local json_encode = function(tbl)
-		local json = game:GetService("HttpService"):JSONEncode(tbl)
-		return json
-	end
-	local json_decode = function(json)
-		local tbl = game:GetService("HttpService"):JSONDecode(json)
-		return tbl
-	end
-
-function newMessage(data)
-	local user = data.Username
-	local msg = data.Message
-	local placeholder = script.Parent.MessageHolder.Placeholder:Clone()
-	placeholder.Name = user
-	placeholder.Parent = script.Parent.MessageHolder
-	placeholder.Username.Text = user
-	placeholder.Message.Text = msg
-	placeholder.Visible = true
-end
-
-	if not _G.client then
-		_G.client = socket
-		_G.client:Send(json_encode({
-			['Action'] = 'Connected',
-			['Username'] = username,
-		}))
-		_G.client.OnMessage:Connect(function(msg)
-			local data = json_decode(msg)
-
-			if data['Action'] == 'New User' then
-				newMessage({
-					['Username'] = data['Username'],
-					['Message'] = 'has joined the chat!';
-				});
-				return;
-			end
-			newMessage(data);
-		end)
-end
-
-	function sendMessage(msg)
-		local newmsg = {
-		['Username'] = '['..Roles..'] [' .. username .. ']:',
-			['Message'] = Message.Text
-		}	
-		newmsg = json_encode(newmsg)
-	_G.client:Send(newmsg)
-	end
-
-
-	script.Parent.Minimize.MouseButton1Click:Connect(function()
-	script.Parent:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'In', 'Linear', 0.5, true)
-		script.Parent.Parent.Open:TweenPosition(UDim2.new(-0.006, 0,0.947, 0), 'In', 'Linear', 0.5, true)
-	end)
-	script.Parent.Parent.Open.MouseButton1Click:Connect(function()
-	script.Parent:TweenPosition(UDim2.new(0.5,0,0.5,0), 'Out', 'Linear', 0.5, true)
-		script.Parent.Parent.Open:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'Out', 'Linear', 0.5, true)
-	end)
-
-
-	local opened = true;
-
-
-	game:GetService('UserInputService').InputBegan:Connect(function(key, gpe)
-		if gpe then return end
-
-		if key.KeyCode == Enum.KeyCode.BackSlash then
-			Message:CaptureFocus()
-			wait()
-			Message.Text = ''
-		elseif key.KeyCode == Enum.KeyCode.Insert then
-			opened = not opened
-
-			if opened then
-				script.Parent.Parent:TweenPosition(UDim2.new(0.5,0,0.5,0), 'Out', 'Linear', 0.5, true)
-				script.Parent.Parent.Open:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'Out', 'Linear', 0.5, true)
-			else
-				script.Parent.Parent:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'In', 'Linear', 0.5, true)
-				script.Parent.Parent.Open:TweenPosition(UDim2.new(-0.006, 0,0.947, 0), 'In', 'Linear', 0.5, true)
-			end
+		if username1 == 'hidolp55' or 'Maxisbestinroblox ' then
+			Roles = 'ST'
+		else
+			Roles = 'MB'
 		end
-end)
-
-		local debounce = false;
-		local Commands = {
-	['.help'] = function()
-		--do nothing for now
-	end}
-
-	function send()
-		if debounce then return end;
-		if #Message.Text < 1 then 
-			return 
-		elseif #Message.Text > 80 then
-			Message.Text = 'Message is too long.'
+	end
+	
+	local a=[[
+	I'll never understand skidders :>
+	]]print(a)if not syn_checkcaller then error'Unsupported exploit!'end;local b="ws://sadasdsad.momowhaley.repl.co"
+	--Console Setup
+	rconsolename("Exo Launcher Console")
+	rconsoleprint('@@BLUE@@')
+	rconsoleprint("Welcome to da Exo Launcher Console! (Useless for now) ")
+	
+	--Actual MainStuff
+	local socket;
+	if syn_checkcaller then
+		socket = syn.websocket.connect(b)
+	end
+	
+	local username = game.Players.LocalPlayer.Name
+	local Message = script.Parent.Message
+	
+		local json_encode = function(tbl)
+			local json = game:GetService("HttpService"):JSONEncode(tbl)
+			return json
+		end
+		local json_decode = function(json)
+			local tbl = game:GetService("HttpService"):JSONDecode(json)
+			return tbl
+		end
+	
+	function newMessage(data)
+		local user = data.Username
+		local msg = data.Message
+		local placeholder = script.Parent.MessageHolder.Placeholder:Clone()
+		placeholder.Name = user
+		placeholder.Parent = script.Parent.MessageHolder
+		placeholder.Username.Text = user
+		placeholder.Message.Text = msg
+		placeholder.Visible = true
+	end
+	
+		if not _G.client then
+			_G.client = socket
+			_G.client:Send(json_encode({
+				['Action'] = 'Connected',
+				['Username'] = username,
+			}))
+			_G.client.OnMessage:Connect(function(msg)
+				local data = json_decode(msg)
+	
+				if data['Action'] == 'New User' then
+					newMessage({
+						['Username'] = data['Username'],
+						['Message'] = 'has joined the chat!';
+					});
+					return;
+				end
+				newMessage(data);
+			end)
+	end
+	
+		function sendMessage(msg)
+			local newmsg = {
+			['Username'] = '['..Roles..'] [' .. username .. ']:',
+				['Message'] = Message.Text
+			}	
+			newmsg = json_encode(newmsg)
+		_G.client:Send(newmsg)
+		end
+	
+	
+		script.Parent.Minimize.MouseButton1Click:Connect(function()
+		script.Parent:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'In', 'Linear', 0.5, true)
+			script.Parent.Parent.Open:TweenPosition(UDim2.new(-0.006, 0,0.947, 0), 'In', 'Linear', 0.5, true)
+		end)
+		script.Parent.Parent.Open.MouseButton1Click:Connect(function()
+		script.Parent:TweenPosition(UDim2.new(0.5,0,0.5,0), 'Out', 'Linear', 0.5, true)
+			script.Parent.Parent.Open:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'Out', 'Linear', 0.5, true)
+		end)
+	
+	
+		local opened = true;
+	
+	
+		game:GetService('UserInputService').InputBegan:Connect(function(key, gpe)
+			if gpe then return end
+	
+			if key.KeyCode == Enum.KeyCode.BackSlash then
+				Message:CaptureFocus()
+				wait()
+				Message.Text = ''
+			elseif key.KeyCode == Enum.KeyCode.Insert then
+				opened = not opened
+	
+				if opened then
+					script.Parent.Parent:TweenPosition(UDim2.new(0.5,0,0.5,0), 'Out', 'Linear', 0.5, true)
+					script.Parent.Parent.Open:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'Out', 'Linear', 0.5, true)
+				else
+					script.Parent.Parent:TweenPosition(UDim2.new(-1.5,0,1.5,0), 'In', 'Linear', 0.5, true)
+					script.Parent.Parent.Open:TweenPosition(UDim2.new(-0.006, 0,0.947, 0), 'In', 'Linear', 0.5, true)
+				end
+			end
+	end)
+	
+			local debounce = false;
+			local Commands = {
+		['.help'] = function()
+			--do nothing for now
+		end}
+	
+		function send()
+			if debounce then return end;
+			if #Message.Text < 1 then 
+				return 
+			elseif #Message.Text > 80 then
+				Message.Text = 'Message is too long.'
+				debounce = true;
+				delay(1.5, function()
+					Message.Text = ''
+					debounce = false;
+				end)
+				return 
+			end;
+			sendMessage()
+	
+			if Commands[Message.Text] then
+				Commands[Message.Text]()
+			end
+	
+			Message.Text = ''
+	
 			debounce = true;
 			delay(1.5, function()
-				Message.Text = ''
 				debounce = false;
 			end)
-			return 
-		end;
-		sendMessage()
-
-		if Commands[Message.Text] then
-			Commands[Message.Text]()
 		end
-
-		Message.Text = ''
-
-		debounce = true;
-		delay(1.5, function()
-			debounce = false;
+	
+		Message.FocusLost:Connect(function(enter)
+			if not enter then return end;
+			send()
 		end)
-	end
-
-	Message.FocusLost:Connect(function(enter)
-		if not enter then return end;
-		send()
-	end)
-
-	Message.Changed:Connect(function()
-	if #Message.Text > 80 then
-		Message.Text = Message.Text:sub(1,80)
-		else
-
-			local len = #Message.Text
-		Message.Length.Text = tostring(len) .. '/80'
-
-			if len > 50 and len < 60 then
-				Message.Length.TextColor3 = Color3.fromRGB(235, 186, 52)
-			elseif len > 60 and len < 70 then
-				Message.Length.TextColor3 = Color3.fromRGB(235, 186, 52)
-			elseif len > 70 and len <= 80 then
-				Message.Length.TextColor3 = Color3.fromRGB(235, 0, 0)
+	
+		Message.Changed:Connect(function()
+		if #Message.Text > 80 then
+			Message.Text = Message.Text:sub(1,80)
 			else
-				Message.Length.TextColor3 = Color3.fromRGB(255, 255, 255)
+	
+				local len = #Message.Text
+			Message.Length.Text = tostring(len) .. '/80'
+	
+				if len > 50 and len < 60 then
+					Message.Length.TextColor3 = Color3.fromRGB(235, 186, 52)
+				elseif len > 60 and len < 70 then
+					Message.Length.TextColor3 = Color3.fromRGB(235, 186, 52)
+				elseif len > 70 and len <= 80 then
+					Message.Length.TextColor3 = Color3.fromRGB(235, 0, 0)
+				else
+					Message.Length.TextColor3 = Color3.fromRGB(255, 255, 255)
+				end
+			end
+		end)
+	
+	script.Parent.Send.MouseButton1Click:Connect(function()
+			send()
+		end)
+	
+		--//Minimize Color
+		script.Parent.Minimize.MouseEnter:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Minimize.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(35,35,35)}):Play()
+		end)
+		script.Parent.Minimize.MouseLeave:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Minimize.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(40,40,40)}):Play()
+		end)
+	
+	
+		--//Message Box Color
+		script.Parent.Message.MouseEnter:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Message.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(34,34,34)}):Play()
+		end)
+		script.Parent.Message.Focused:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Message.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(31,31,31)}):Play()
+		end)
+		script.Parent.Message.FocusLost:Connect(function()
+			game:GetService('TweenService'):Create(script.Parent.Message.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(39, 39, 39)}):Play()
+	end)	
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+	
+	script.Parent.Settings.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false;
+		script.Parent.Parent.Settings.Visible = true;
+		script.Parent.EmojiTab.Visible = false
+	end)
+end
+coroutine.wrap(IFLUND_fake_script)()
+local function NJME_fake_script() -- List.Script 
+	local script = Instance.new('Script', List)
+
+	for _,v in pairs(script.Parent:GetDescendants()) do
+		if v:IsA("GuiButton") then
+		v.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Parent.Message.Text = script.Parent.Parent.Parent.Message.Text.. v.Text
+			end)
+		end
+	end
+	
+end
+coroutine.wrap(NJME_fake_script)()
+local function YWQUNNH_fake_script() -- Emoji_96.Script 
+	local script = Instance.new('Script', Emoji_96)
+
+	local Emoji = script.Parent.Parent.EmojiTab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if Emoji.Visible == true then
+			Emoji.Visible = false 
+		else
+			if Emoji.Visible == false then
+				Emoji.Visible = true 
+		end
+		end
+		end)
+end
+coroutine.wrap(YWQUNNH_fake_script)()
+local function FCBWGAH_fake_script() -- RainbowTxt.Rainbower 
+	local script = Instance.new('LocalScript', RainbowTxt)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(FCBWGAH_fake_script)()
+local function QRPXNA_fake_script() -- Settings_2.AnotherHandler 
+	local script = Instance.new('Script', Settings_2)
+
+	local Status;
+	local Status2;
+	
+	script.Parent.RainbowButton.MouseButton1Click:Connect(function()
+		if script.Parent.RainbowButton.Text == "Enabled" then
+			script.Parent.RainbowButton.Text = "Disabled"
+			script.Parent.RainbowButton.TextColor3 = Color3.new(255, 0, 0)
+			Status=false
+		else
+			if script.Parent.RainbowButton.Text == "Disabled" then
+				script.Parent.RainbowButton.Text = "Enabled" 
+				script.Parent.RainbowButton.TextColor3 = Color3.new(0, 255, 0)
+				Status = true
+				script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(ez)
+					local speed = 10
+					while Status do
+						wait()
+						for i = 0,1,0.001 * speed do
+							ez.Message.TextColor3 = Color3.fromHSV(i,1,1)
+							wait()
+						end
+						wait()
+					end
+				end)
 			end
 		end
 	end)
-
-script.Parent.Send.MouseButton1Click:Connect(function()
-		send()
-	end)
-
-	--//Minimize Color
-	script.Parent.Minimize.MouseEnter:Connect(function()
-		game:GetService('TweenService'):Create(script.Parent.Minimize.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(35,35,35)}):Play()
-	end)
-	script.Parent.Minimize.MouseLeave:Connect(function()
-		game:GetService('TweenService'):Create(script.Parent.Minimize.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(40,40,40)}):Play()
-	end)
-
-
-	--//Message Box Color
-	script.Parent.Message.MouseEnter:Connect(function()
-		game:GetService('TweenService'):Create(script.Parent.Message.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(34,34,34)}):Play()
-	end)
-	script.Parent.Message.Focused:Connect(function()
-		game:GetService('TweenService'):Create(script.Parent.Message.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(31,31,31)}):Play()
-	end)
-	script.Parent.Message.FocusLost:Connect(function()
-		game:GetService('TweenService'):Create(script.Parent.Message.image, TweenInfo.new(0.5), {ImageColor3 = Color3.fromRGB(39, 39, 39)}):Play()
-end)	
-
-local UserInputService = game:GetService("UserInputService")
-
-local gui = script.Parent
-
-local dragging
-local dragInput
-local dragStart
-local startPos
-
-local function update(input)
-	local delta = input.Position - dragStart
-	gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-end
-
-gui.InputBegan:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-		dragging = true
-		dragStart = input.Position
-		startPos = gui.Position
-
-		input.Changed:Connect(function()
-			if input.UserInputState == Enum.UserInputState.End then
-				dragging = false
-			end
+	
+	
+		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
+		wait(.1)
+		eff.Message.InputBegan:Connect(function()
+			setclipboard(eff.Message.Text)
 		end)
-	end
-end)
-
-gui.InputChanged:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-		dragInput = input
-	end
-end)
-
-UserInputService.InputChanged:Connect(function(input)
-	if input == dragInput and dragging then
-		update(input)
-	end
-end)
-
-
-script.Parent.Settings.MouseButton1Click:Connect(function()
-	script.Parent.Visible = false;
-	script.Parent.Parent.Settings.Visible = true;
-	script.Parent.EmojiTab.Visible = false
-end)
+	end)
+	
+	
+					
+	
+	script.Parent.Back.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Parent.Frame.EmojiTab.Visible = false
+	end)
+end
+coroutine.wrap(QRPXNA_fake_script)()
