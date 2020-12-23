@@ -126,7 +126,6 @@ local Emoji_93 = Instance.new("TextButton")
 local Emoji_94 = Instance.new("TextButton")
 local Emoji_95 = Instance.new("TextButton")
 local TopBarContainer = Instance.new("Frame")
-local TopBarShadow = Instance.new("ImageLabel")
 local Emoji_96 = Instance.new("ImageButton")
 local TextLabel_3 = Instance.new("TextLabel")
 
@@ -1513,14 +1512,6 @@ TopBarContainer.BorderSizePixel = 0
 TopBarContainer.Position = UDim2.new(0, 0, 0, -36)
 TopBarContainer.Size = UDim2.new(1, 0, 0, 36)
 
-TopBarShadow.Name = "TopBarShadow"
-TopBarShadow.Parent = TopBarContainer
-TopBarShadow.BackgroundTransparency = 1.000
-TopBarShadow.Position = UDim2.new(0, 0, 1, 0)
-TopBarShadow.Size = UDim2.new(1, 0, 0, 3)
-TopBarShadow.Visible = false
-TopBarShadow.Image = "rbxasset://textures/ui/TopBar/dropshadow.png"
-
 Emoji_96.Name = "Emoji"
 Emoji_96.Parent = TopBarContainer
 Emoji_96.BackgroundTransparency = 1.000
@@ -1540,7 +1531,7 @@ TextLabel_3.TextSize = 25.000
 
 -- Scripts:
 
-local function YMDITOK_fake_script() -- Frame.LocalScript 
+local function SVSRA_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1782,8 +1773,8 @@ local function YMDITOK_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(YMDITOK_fake_script)()
-local function KCPGQPY_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(SVSRA_fake_script)()
+local function HLPCVU_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1814,8 +1805,8 @@ local function KCPGQPY_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(KCPGQPY_fake_script)()
-local function SEPFY_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(HLPCVU_fake_script)()
+local function NAAOXS_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1861,8 +1852,8 @@ local function SEPFY_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(SEPFY_fake_script)()
-local function IAEI_fake_script() -- List.Script 
+coroutine.wrap(NAAOXS_fake_script)()
+local function YVJJRJ_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1871,8 +1862,8 @@ local function IAEI_fake_script() -- List.Script
 			end)
 		end
 end
-coroutine.wrap(IAEI_fake_script)()
-local function LNMXKJ_fake_script() -- Emoji_96.LocalScript 
+coroutine.wrap(YVJJRJ_fake_script)()
+local function PVCXL_fake_script() -- Emoji_96.LocalScript 
 	local script = Instance.new('LocalScript', Emoji_96)
 
 	local Emoji = script.Parent.Parent.Parent.EmojiTab
@@ -1887,4 +1878,4 @@ local function LNMXKJ_fake_script() -- Emoji_96.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LNMXKJ_fake_script)()
+coroutine.wrap(PVCXL_fake_script)()
