@@ -446,8 +446,9 @@ EmojiTab.Name = "EmojiTab"
 EmojiTab.Parent = ScreenGui
 EmojiTab.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 EmojiTab.BorderSizePixel = 0
-EmojiTab.Position = UDim2.new(0.843116343, 10, 0.242765874, 25)
+EmojiTab.Position = UDim2.new(0.602881968, 10, 0.277397901, 25)
 EmojiTab.Size = UDim2.new(0, 200, 0, 200)
+EmojiTab.Visible = false
 
 List.Name = "List"
 List.Parent = EmojiTab
@@ -1530,7 +1531,7 @@ Emoji_96.AutoButtonColor = false
 TextLabel_3.Parent = Emoji_96
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(10.1000004, -11, 4.5087719, -14)
+TextLabel_3.Position = UDim2.new(11.9200001, -11, 4.76315784, -14)
 TextLabel_3.Size = UDim2.new(0, 22, 0, 28)
 TextLabel_3.Font = Enum.Font.SourceSans
 TextLabel_3.Text = "🙂"
@@ -1539,7 +1540,7 @@ TextLabel_3.TextSize = 25.000
 
 -- Scripts:
 
-local function HKTJ_fake_script() -- Frame.LocalScript 
+local function YMDITOK_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1781,8 +1782,8 @@ local function HKTJ_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Settings.Visible = true;
 	end)
 end
-coroutine.wrap(HKTJ_fake_script)()
-local function UFGGS_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(YMDITOK_fake_script)()
+local function KCPGQPY_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1813,8 +1814,8 @@ local function UFGGS_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(UFGGS_fake_script)()
-local function WAEGOFN_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(KCPGQPY_fake_script)()
+local function SEPFY_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1860,18 +1861,18 @@ local function WAEGOFN_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(WAEGOFN_fake_script)()
-local function YHXVQ_fake_script() -- List.Script 
+coroutine.wrap(SEPFY_fake_script)()
+local function IAEI_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
 		v.MouseButton1Click:Connect(function()
-			script.Parent.Parent.Parent.Frame.Message.Text = script.Parent.Parent.Parent.Frame.Message.Text.. v.Name
+			script.Parent.Parent.Parent.Frame.Message.Text = script.Parent.Parent.Parent.Frame.Message.Text.. v.Text
 			end)
 		end
 end
-coroutine.wrap(YHXVQ_fake_script)()
-local function TVTLUK_fake_script() -- Emoji_96.LocalScript 
+coroutine.wrap(IAEI_fake_script)()
+local function LNMXKJ_fake_script() -- Emoji_96.LocalScript 
 	local script = Instance.new('LocalScript', Emoji_96)
 
 	local Emoji = script.Parent.Parent.Parent.EmojiTab
@@ -1886,4 +1887,4 @@ local function TVTLUK_fake_script() -- Emoji_96.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TVTLUK_fake_script)()
+coroutine.wrap(LNMXKJ_fake_script)()
