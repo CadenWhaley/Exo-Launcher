@@ -20,8 +20,6 @@ local Settings = Instance.new("TextButton")
 local Send_Roundify_2px = Instance.new("ImageLabel")
 local Send = Instance.new("TextButton")
 local Send_Roundify_2px_2 = Instance.new("ImageLabel")
-local TopBarContainer = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
 local EmojiTab = Instance.new("Frame")
 local List = Instance.new("ScrollingFrame")
 local Emoji = Instance.new("TextButton")
@@ -120,8 +118,10 @@ local Emoji_93 = Instance.new("TextButton")
 local Emoji_94 = Instance.new("TextButton")
 local Emoji_95 = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
-local Open = Instance.new("TextButton")
+local Emoji_96 = Instance.new("TextButton")
 local image_3 = Instance.new("ImageLabel")
+local Open = Instance.new("TextButton")
+local image_4 = Instance.new("ImageLabel")
 local Settings_2 = Instance.new("Frame")
 local RainbowTxt = Instance.new("TextLabel")
 local RainbowButton = Instance.new("TextButton")
@@ -334,26 +334,6 @@ Send_Roundify_2px_2.ImageColor3 = Color3.fromRGB(0, 0, 191)
 Send_Roundify_2px_2.ScaleType = Enum.ScaleType.Slice
 Send_Roundify_2px_2.SliceCenter = Rect.new(100, 100, 100, 100)
 Send_Roundify_2px_2.SliceScale = 0.090
-
-TopBarContainer.Name = "TopBarContainer"
-TopBarContainer.Parent = Frame
-TopBarContainer.Active = true
-TopBarContainer.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-TopBarContainer.BackgroundTransparency = 1.000
-TopBarContainer.BorderSizePixel = 0
-TopBarContainer.Position = UDim2.new(0, 0, 0, -36)
-TopBarContainer.Size = UDim2.new(1, 0, 0, 36)
-
-TextButton.Parent = TopBarContainer
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.758844137, 10, 8.47144508, 25)
-TextButton.Size = UDim2.new(0, 30, 0, 30)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "🙂"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 25.000
 
 EmojiTab.Name = "EmojiTab"
 EmojiTab.Parent = Frame
@@ -1427,6 +1407,36 @@ TextLabel_2.Text = "Emoji's"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 14.000
 
+Emoji_96.Name = "Emoji"
+Emoji_96.Parent = Frame
+Emoji_96.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_96.BackgroundTransparency = 1.000
+Emoji_96.BorderSizePixel = 0
+Emoji_96.Position = UDim2.new(0.742790461, 0, 0.00826446246, 0)
+Emoji_96.Size = UDim2.new(0, 77, 0, 41)
+Emoji_96.ZIndex = 4
+Emoji_96.Font = Enum.Font.ArialBold
+Emoji_96.Text = "Emoji"
+Emoji_96.TextColor3 = Color3.fromRGB(255, 255, 255)
+Emoji_96.TextSize = 25.000
+Emoji_96.TextWrapped = true
+
+image_3.Name = "image"
+image_3.Parent = Emoji_96
+image_3.Active = true
+image_3.AnchorPoint = Vector2.new(0.5, 0.5)
+image_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+image_3.BackgroundTransparency = 1.000
+image_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+image_3.Selectable = true
+image_3.Size = UDim2.new(1, 0, 1, 0)
+image_3.ZIndex = 3
+image_3.Image = "rbxassetid://3570695787"
+image_3.ImageColor3 = Color3.fromRGB(40, 40, 40)
+image_3.ScaleType = Enum.ScaleType.Slice
+image_3.SliceCenter = Rect.new(100, 100, 100, 100)
+image_3.SliceScale = 0.090
+
 Open.Name = "Open"
 Open.Parent = ScreenGui
 Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1442,20 +1452,20 @@ Open.TextScaled = true
 Open.TextSize = 14.000
 Open.TextWrapped = true
 
-image_3.Name = "image"
-image_3.Parent = Open
-image_3.Active = true
-image_3.AnchorPoint = Vector2.new(0.5, 0.5)
-image_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-image_3.BackgroundTransparency = 1.000
-image_3.Position = UDim2.new(0.5, 0, 0.5, 0)
-image_3.Selectable = true
-image_3.Size = UDim2.new(1, 0, 1, 0)
-image_3.Image = "rbxassetid://3570695787"
-image_3.ImageColor3 = Color3.fromRGB(42, 42, 42)
-image_3.ScaleType = Enum.ScaleType.Slice
-image_3.SliceCenter = Rect.new(100, 100, 100, 100)
-image_3.SliceScale = 0.090
+image_4.Name = "image"
+image_4.Parent = Open
+image_4.Active = true
+image_4.AnchorPoint = Vector2.new(0.5, 0.5)
+image_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+image_4.BackgroundTransparency = 1.000
+image_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+image_4.Selectable = true
+image_4.Size = UDim2.new(1, 0, 1, 0)
+image_4.Image = "rbxassetid://3570695787"
+image_4.ImageColor3 = Color3.fromRGB(42, 42, 42)
+image_4.ScaleType = Enum.ScaleType.Slice
+image_4.SliceCenter = Rect.new(100, 100, 100, 100)
+image_4.SliceScale = 0.090
 
 Settings_2.Name = "Settings"
 Settings_2.Parent = ScreenGui
@@ -1535,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function YQIT_fake_script() -- Frame.LocalScript 
+local function SKMVLD_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -1778,24 +1788,8 @@ local function YQIT_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(YQIT_fake_script)()
-local function EWBVZKZ_fake_script() -- TextButton.Script 
-	local script = Instance.new('Script', TextButton)
-
-	local Emoji = script.Parent.Parent.Parent.EmojiTab
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if Emoji.Visible == false then
-			Emoji.Visible = true
-		else
-			if Emoji.Visible == true then
-				Emoji.Visible = false
-			end
-		end
-	end)
-end
-coroutine.wrap(EWBVZKZ_fake_script)()
-local function LYBIIRQ_fake_script() -- List.Script 
+coroutine.wrap(SKMVLD_fake_script)()
+local function CWEFLH_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1807,8 +1801,23 @@ local function LYBIIRQ_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(LYBIIRQ_fake_script)()
-local function VKCHSGQ_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(CWEFLH_fake_script)()
+local function OKZK_fake_script() -- Emoji_96.Script 
+	local script = Instance.new('Script', Emoji_96)
+
+	local Emoji = script.Parent.Parent.EmojiTab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if Emoji.Visible == true then
+			Emoji.Visible = false 
+		else
+			if Emoji.Visible == false then
+				Emoji.Visible = true 
+		end
+	end)
+end
+coroutine.wrap(OKZK_fake_script)()
+local function XNKZ_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1839,8 +1848,8 @@ local function VKCHSGQ_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(VKCHSGQ_fake_script)()
-local function XTUC_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(XNKZ_fake_script)()
+local function WAFER_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1888,4 +1897,4 @@ local function XTUC_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = true
 	end)
 end
-coroutine.wrap(XTUC_fake_script)()
+coroutine.wrap(WAFER_fake_script)()
