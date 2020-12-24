@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function KNNA_fake_script() -- Frame.LocalScript 
+local function SRDJOEO_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1572,6 +1572,11 @@ local function KNNA_fake_script() -- Frame.LocalScript
 	
 	if game.Players.LocalPlayer.Name == 'linkmiegel' then
 		Roles = 'STF'
+	end
+	
+	
+	if game.Players.LocalPlayer.Name == 'Thomas_Cornez' then
+		Roles = 'OOF'
 	end
 	
 	local a=[[
@@ -1802,8 +1807,8 @@ local function KNNA_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(KNNA_fake_script)()
-local function TWUFAR_fake_script() -- Emoji.Script 
+coroutine.wrap(SRDJOEO_fake_script)()
+local function RZQXT_fake_script() -- Emoji.Script 
 	local script = Instance.new('Script', Emoji)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1818,8 +1823,8 @@ local function TWUFAR_fake_script() -- Emoji.Script
 		end
 		end)
 end
-coroutine.wrap(TWUFAR_fake_script)()
-local function IYXSUMT_fake_script() -- List.Script 
+coroutine.wrap(RZQXT_fake_script)()
+local function POKXCZJ_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1831,8 +1836,8 @@ local function IYXSUMT_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(IYXSUMT_fake_script)()
-local function VFCQB_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(POKXCZJ_fake_script)()
+local function RGQC_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1863,8 +1868,8 @@ local function VFCQB_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(VFCQB_fake_script)()
-local function VVAYXF_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(RGQC_fake_script)()
+local function JBDTNRK_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1898,7 +1903,7 @@ local function VVAYXF_fake_script() -- Settings_2.AnotherHandler
 	
 	script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
 		eff.Message.InputBegan:Connect(function(input)
-			if input.UserInputType  == Enum.KeyCode.C then
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
 				setclipboard(tostring(eff.Message.Text))
 			end
 		end)
@@ -1913,4 +1918,4 @@ local function VVAYXF_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(VVAYXF_fake_script)()
+coroutine.wrap(JBDTNRK_fake_script)()
