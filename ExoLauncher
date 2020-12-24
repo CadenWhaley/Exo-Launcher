@@ -1544,7 +1544,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function HUKMTH_fake_script() -- Frame.LocalScript 
+local function YLALJAH_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1562,15 +1562,15 @@ local function HUKMTH_fake_script() -- Frame.LocalScript
 	end
 	
 	if game.Players.LocalPlayer.Name == 'hidolp55' then
-		Roles = 'ST'
+		Roles = 'STF'
 	end
 	
 	if game.Players.LocalPlayer.Name == 'Maxisbestinroblox' then
-		Roles = 'ST'
+		Roles = 'STF'
 	end
 	
 	if game.Players.LocalPlayer.Name == 'linkmiegel' then
-		Roles = 'ST'
+		Roles = 'STF'
 	end
 	
 	local a=[[
@@ -1579,8 +1579,11 @@ local function HUKMTH_fake_script() -- Frame.LocalScript
 	--Console Setup
 	rconsolename("Exo Launcher Console")
 	rconsoleprint('@@BLUE@@')
-	rconsoleprint("Welcome to da Exo Launcher Console! (Useless for now) ")
-	
+	rconsoleprint("Welcome to da Exo Launcher Console!")
+	b.OnClose:Connect(function()
+		game.Players.LocalPlayer:Kick("Sorry Websocket Closed! (Prob to due updates)")
+		rconsoleerr("Websocket was Closed!")
+	end)
 	--Actual MainStuff
 	local socket;
 	if syn_checkcaller then
@@ -1802,8 +1805,8 @@ local function HUKMTH_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(HUKMTH_fake_script)()
-local function OITWHP_fake_script() -- List.Script 
+coroutine.wrap(YLALJAH_fake_script)()
+local function NBDXCMM_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1815,8 +1818,8 @@ local function OITWHP_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(OITWHP_fake_script)()
-local function BPOSBRP_fake_script() -- Emoji_96.Script 
+coroutine.wrap(NBDXCMM_fake_script)()
+local function XJBRWRY_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1831,8 +1834,8 @@ local function BPOSBRP_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(BPOSBRP_fake_script)()
-local function VYCAB_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(XJBRWRY_fake_script)()
+local function YWWQRJ_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1863,8 +1866,8 @@ local function VYCAB_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(VYCAB_fake_script)()
-local function NPQMFA_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(YWWQRJ_fake_script)()
+local function XBFGK_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1912,4 +1915,4 @@ local function NPQMFA_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(NPQMFA_fake_script)()
+coroutine.wrap(XBFGK_fake_script)()
