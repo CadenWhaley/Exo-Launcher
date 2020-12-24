@@ -238,6 +238,7 @@ Message_2.BorderSizePixel = 0
 Message_2.Position = UDim2.new(0.0410557538, 0, 0.818593025, 0)
 Message_2.Size = UDim2.new(0, 488, 0, 62)
 Message_2.ZIndex = 5
+Message_2.ClearTextOnFocus = false
 Message_2.Font = Enum.Font.Cartoon
 Message_2.PlaceholderText = "Press \\ to focus, or click here to focus."
 Message_2.Text = ""
@@ -1544,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function JIAJ_fake_script() -- Frame.LocalScript 
+local function SYHHWTU_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1801,8 +1802,8 @@ local function JIAJ_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(JIAJ_fake_script)()
-local function UNEVC_fake_script() -- List.Script 
+coroutine.wrap(SYHHWTU_fake_script)()
+local function LNKXUJ_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1814,8 +1815,8 @@ local function UNEVC_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(UNEVC_fake_script)()
-local function XHIOVEM_fake_script() -- Emoji_96.Script 
+coroutine.wrap(LNKXUJ_fake_script)()
+local function ARYBLX_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1830,8 +1831,8 @@ local function XHIOVEM_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(XHIOVEM_fake_script)()
-local function QKRZJXD_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(ARYBLX_fake_script)()
+local function RQYJRD_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1862,8 +1863,8 @@ local function QKRZJXD_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(QKRZJXD_fake_script)()
-local function FRJYZR_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(RQYJRD_fake_script)()
+local function LVAAN_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1911,4 +1912,4 @@ local function FRJYZR_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(FRJYZR_fake_script)()
+coroutine.wrap(LVAAN_fake_script)()
