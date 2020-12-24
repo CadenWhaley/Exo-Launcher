@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function PYQKSQ_fake_script() -- Frame.LocalScript 
+local function NERL_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1807,8 +1807,8 @@ local function PYQKSQ_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(PYQKSQ_fake_script)()
-local function PDZYOOI_fake_script() -- Emoji.Script 
+coroutine.wrap(NERL_fake_script)()
+local function QBQKOO_fake_script() -- Emoji.Script 
 	local script = Instance.new('Script', Emoji)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1823,8 +1823,8 @@ local function PDZYOOI_fake_script() -- Emoji.Script
 		end
 		end)
 end
-coroutine.wrap(PDZYOOI_fake_script)()
-local function SWMDVD_fake_script() -- List.Script 
+coroutine.wrap(QBQKOO_fake_script)()
+local function ZGUJBQ_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1836,8 +1836,8 @@ local function SWMDVD_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(SWMDVD_fake_script)()
-local function YSRJGP_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(ZGUJBQ_fake_script)()
+local function BMSHZ_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1868,8 +1868,8 @@ local function YSRJGP_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(YSRJGP_fake_script)()
-local function GARDQAP_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(BMSHZ_fake_script)()
+local function MBQF_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1905,10 +1905,12 @@ local function GARDQAP_fake_script() -- Settings_2.AnotherHandler
 		eff.Message.InputBegan:Connect(function(input)
 			if input.UserInputType == Enum.UserInputType.MouseButton1 then
 				for _,v in pairs(script.Parent.Parent.Frame.EmojiTab.List:GetChildren()) do
+					if v:IsA("TextButton") then
 					if string.find(eff.Message.Text, v.Text) then
 						print("Cannot be copied since an Emoji is there! Stupid")
 					else
-						setclipboard(tostring(eff.Message.Text))
+							setclipboard(tostring(eff.Message.Text))
+						end
 					end
 				end	
 			end
@@ -1924,4 +1926,4 @@ local function GARDQAP_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(GARDQAP_fake_script)()
+coroutine.wrap(MBQF_fake_script)()
