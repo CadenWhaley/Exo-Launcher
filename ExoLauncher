@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function WMJTMU_fake_script() -- Frame.LocalScript 
+local function FQNG_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1586,7 +1586,6 @@ local function WMJTMU_fake_script() -- Frame.LocalScript
 	if syn_checkcaller then
 		socket = syn.websocket.connect(b)
 	end
-	_G.EmojiUsed = false
 	
 	local username = game.Players.LocalPlayer.Name
 	local Message = script.Parent.Message
@@ -1733,7 +1732,6 @@ local function WMJTMU_fake_script() -- Frame.LocalScript
 		end)
 	
 	script.Parent.Send.MouseButton1Click:Connect(function()
-		_G.EmojiUsed = false
 			send()
 		end)
 	
@@ -1804,8 +1802,8 @@ local function WMJTMU_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(WMJTMU_fake_script)()
-local function RIEVOKQ_fake_script() -- Emoji.Script 
+coroutine.wrap(FQNG_fake_script)()
+local function XMJO_fake_script() -- Emoji.Script 
 	local script = Instance.new('Script', Emoji)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1820,8 +1818,8 @@ local function RIEVOKQ_fake_script() -- Emoji.Script
 		end
 		end)
 end
-coroutine.wrap(RIEVOKQ_fake_script)()
-local function PHSO_fake_script() -- List.Script 
+coroutine.wrap(XMJO_fake_script)()
+local function ZQBYR_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1834,8 +1832,8 @@ local function PHSO_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(PHSO_fake_script)()
-local function EAWMNKT_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(ZQBYR_fake_script)()
+local function VUYUO_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1866,8 +1864,8 @@ local function EAWMNKT_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(EAWMNKT_fake_script)()
-local function GTABRL_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(VUYUO_fake_script)()
+local function KKNS_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1900,8 +1898,8 @@ local function GTABRL_fake_script() -- Settings_2.AnotherHandler
 	
 	
 		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
-		eff.Message.InputBegan:Connect(function()
-			if _G.EmojiUsed == false then
+		eff.Message.InputBegan:Connect(function(input)
+			if input == Enum.KeyCode.C then
 				setclipboard(tostring(eff.Message.Text))
 			end
 		end)
@@ -1916,4 +1914,4 @@ local function GTABRL_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(GTABRL_fake_script)()
+coroutine.wrap(KKNS_fake_script)()
