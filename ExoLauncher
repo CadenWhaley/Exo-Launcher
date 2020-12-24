@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function TVAYIR_fake_script() -- Frame.LocalScript 
+local function FUPJEX_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1802,8 +1802,8 @@ local function TVAYIR_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(TVAYIR_fake_script)()
-local function HVLNW_fake_script() -- List.Script 
+coroutine.wrap(FUPJEX_fake_script)()
+local function IDWZ_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1815,8 +1815,8 @@ local function HVLNW_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(HVLNW_fake_script)()
-local function CRRQLU_fake_script() -- Emoji_96.Script 
+coroutine.wrap(IDWZ_fake_script)()
+local function ABFC_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1831,8 +1831,8 @@ local function CRRQLU_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(CRRQLU_fake_script)()
-local function OZVB_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(ABFC_fake_script)()
+local function PQSPDJB_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1863,8 +1863,8 @@ local function OZVB_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(OZVB_fake_script)()
-local function NHUEG_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(PQSPDJB_fake_script)()
+local function OGGTP_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1895,22 +1895,11 @@ local function NHUEG_fake_script() -- Settings_2.AnotherHandler
 		end
 	end)
 	
-	local json_encode = function(tbl)
-		local json = game:GetService("HttpService"):JSONEncode(tbl)
-		return json
-	end
-	local json_decode = function(json)
-		local tbl = game:GetService("HttpService"):JSONDecode(json)
-		return tbl
-	end
-	
 	
 		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
 		wait(.1)
 		eff.Message.InputBegan:Connect(function()
-			local try1 = json_decode(eff.Message.Text)
-			local try2 = json_encode(try1)
-			syn.write_clipboard(try2)
+			print(tostring(eff.Message.Text))
 		end)
 	end)
 	
@@ -1923,4 +1912,4 @@ local function NHUEG_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(NHUEG_fake_script)()
+coroutine.wrap(OGGTP_fake_script)()
