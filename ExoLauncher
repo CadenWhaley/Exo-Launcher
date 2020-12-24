@@ -1544,7 +1544,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function YLALJAH_fake_script() -- Frame.LocalScript 
+local function JIAJ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1580,10 +1580,6 @@ local function YLALJAH_fake_script() -- Frame.LocalScript
 	rconsolename("Exo Launcher Console")
 	rconsoleprint('@@BLUE@@')
 	rconsoleprint("Welcome to da Exo Launcher Console!")
-	b.OnClose:Connect(function()
-		game.Players.LocalPlayer:Kick("Sorry Websocket Closed! (Prob to due updates)")
-		rconsoleerr("Websocket was Closed!")
-	end)
 	--Actual MainStuff
 	local socket;
 	if syn_checkcaller then
@@ -1805,8 +1801,8 @@ local function YLALJAH_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(YLALJAH_fake_script)()
-local function NBDXCMM_fake_script() -- List.Script 
+coroutine.wrap(JIAJ_fake_script)()
+local function UNEVC_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1818,8 +1814,8 @@ local function NBDXCMM_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(NBDXCMM_fake_script)()
-local function XJBRWRY_fake_script() -- Emoji_96.Script 
+coroutine.wrap(UNEVC_fake_script)()
+local function XHIOVEM_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1834,8 +1830,8 @@ local function XJBRWRY_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(XJBRWRY_fake_script)()
-local function YWWQRJ_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(XHIOVEM_fake_script)()
+local function QKRZJXD_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1866,8 +1862,8 @@ local function YWWQRJ_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(YWWQRJ_fake_script)()
-local function XBFGK_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(QKRZJXD_fake_script)()
+local function FRJYZR_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1915,4 +1911,4 @@ local function XBFGK_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(XBFGK_fake_script)()
+coroutine.wrap(FRJYZR_fake_script)()
