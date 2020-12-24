@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function RXLXI_fake_script() -- Frame.LocalScript 
+local function XAQSMJ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1802,8 +1802,8 @@ local function RXLXI_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(RXLXI_fake_script)()
-local function IPNVTOP_fake_script() -- List.Script 
+coroutine.wrap(XAQSMJ_fake_script)()
+local function ARDBQ_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1815,8 +1815,8 @@ local function IPNVTOP_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(IPNVTOP_fake_script)()
-local function DJLMTIV_fake_script() -- Emoji_96.Script 
+coroutine.wrap(ARDBQ_fake_script)()
+local function APAHAV_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1831,8 +1831,8 @@ local function DJLMTIV_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(DJLMTIV_fake_script)()
-local function XIBFS_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(APAHAV_fake_script)()
+local function NSPQ_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1863,8 +1863,8 @@ local function XIBFS_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(XIBFS_fake_script)()
-local function DINXH_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(NSPQ_fake_script)()
+local function YFLWAG_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1898,11 +1898,8 @@ local function DINXH_fake_script() -- Settings_2.AnotherHandler
 	
 		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
 		eff.Message.InputBegan:Connect(function(input, gameProcessed)
-				if input.UserInputType == Enum.UserInputType.Keyboard then
-					local keyPressed = input.KeyCode
 					if input.UserInputType == Enum.UserInputType.MouseButton1 then
 					print(tostring(eff.Message.Text))	
-				end
 			end
 		end)
 	end)
@@ -1916,4 +1913,4 @@ local function DINXH_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(DINXH_fake_script)()
+coroutine.wrap(YFLWAG_fake_script)()
