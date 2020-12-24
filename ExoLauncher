@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function SYHHWTU_fake_script() -- Frame.LocalScript 
+local function SPXIUT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1578,9 +1578,7 @@ local function SYHHWTU_fake_script() -- Frame.LocalScript
 	I'll never understand skidders :>
 	]]print(a)if not syn_checkcaller then error'Unsupported exploit!'end;local b="ws://sadasdsad.momowhaley.repl.co"
 	--Console Setup
-	rconsolename("Exo Launcher Console")
-	rconsoleprint('@@BLUE@@')
-	rconsoleprint("Welcome to da Exo Launcher Console!")
+	
 	--Actual MainStuff
 	local socket;
 	if syn_checkcaller then
@@ -1802,8 +1800,8 @@ local function SYHHWTU_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(SYHHWTU_fake_script)()
-local function LNKXUJ_fake_script() -- List.Script 
+coroutine.wrap(SPXIUT_fake_script)()
+local function EUOEBTF_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1815,8 +1813,8 @@ local function LNKXUJ_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(LNKXUJ_fake_script)()
-local function ARYBLX_fake_script() -- Emoji_96.Script 
+coroutine.wrap(EUOEBTF_fake_script)()
+local function NXMQB_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1831,8 +1829,8 @@ local function ARYBLX_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(ARYBLX_fake_script)()
-local function RQYJRD_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(NXMQB_fake_script)()
+local function YRIBJSJ_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1863,8 +1861,8 @@ local function RQYJRD_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(RQYJRD_fake_script)()
-local function LVAAN_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(YRIBJSJ_fake_script)()
+local function XJVOEYE_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1912,4 +1910,4 @@ local function LVAAN_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(LVAAN_fake_script)()
+coroutine.wrap(XJVOEYE_fake_script)()
