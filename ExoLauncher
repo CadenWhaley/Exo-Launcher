@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function QRCHJ_fake_script() -- Frame.LocalScript 
+local function ZXVOTPC_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1732,6 +1732,7 @@ local function QRCHJ_fake_script() -- Frame.LocalScript
 		end)
 	
 	script.Parent.Send.MouseButton1Click:Connect(function()
+		script.Parent.EmojiUsed = false
 			send()
 		end)
 	
@@ -1802,21 +1803,22 @@ local function QRCHJ_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(QRCHJ_fake_script)()
-local function OIQL_fake_script() -- List.Script 
+coroutine.wrap(ZXVOTPC_fake_script)()
+local function BRQTEJS_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
 		if v:IsA("GuiButton") then
 		v.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Message.Text = script.Parent.Parent.Parent.Message.Text.. v.Text
+				script.Parent.Parent.Parent.EmojiUsed.Value = true
 			end)
 		end
 	end
 	
 end
-coroutine.wrap(OIQL_fake_script)()
-local function SIQL_fake_script() -- Emoji_96.Script 
+coroutine.wrap(BRQTEJS_fake_script)()
+local function ULJR_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1831,8 +1833,8 @@ local function SIQL_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(SIQL_fake_script)()
-local function ZAEAXS_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(ULJR_fake_script)()
+local function UHDFW_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1863,8 +1865,8 @@ local function ZAEAXS_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(ZAEAXS_fake_script)()
-local function LHJJI_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(UHDFW_fake_script)()
+local function ILQC_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1897,9 +1899,9 @@ local function LHJJI_fake_script() -- Settings_2.AnotherHandler
 	
 	
 		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
-		eff.Message.InputBegan:Connect(function(input)
-					if input.UserInputType == Enum.UserInputType.MouseButton1 then
-					print(tostring(eff.Message.Text))	
+		eff.Message.InputBegan:Connect(function()
+			if script.Parent.Parent.Frame.EmojiUsed.Value == false then
+				setclipboard(tostring(eff.Message.Text))
 			end
 		end)
 	end)
@@ -1913,4 +1915,4 @@ local function LHJJI_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(LHJJI_fake_script)()
+coroutine.wrap(ILQC_fake_script)()
