@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function FUPJEX_fake_script() -- Frame.LocalScript 
+local function NEPO_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1802,8 +1802,8 @@ local function FUPJEX_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(FUPJEX_fake_script)()
-local function IDWZ_fake_script() -- List.Script 
+coroutine.wrap(NEPO_fake_script)()
+local function WQSZ_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1815,8 +1815,8 @@ local function IDWZ_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(IDWZ_fake_script)()
-local function ABFC_fake_script() -- Emoji_96.Script 
+coroutine.wrap(WQSZ_fake_script)()
+local function CJEQ_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1831,8 +1831,8 @@ local function ABFC_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(ABFC_fake_script)()
-local function PQSPDJB_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(CJEQ_fake_script)()
+local function SIONB_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1863,8 +1863,8 @@ local function PQSPDJB_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(PQSPDJB_fake_script)()
-local function OGGTP_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(SIONB_fake_script)()
+local function ZYNYQ_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1898,8 +1898,10 @@ local function OGGTP_fake_script() -- Settings_2.AnotherHandler
 	
 		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
 		wait(.1)
-		eff.Message.InputBegan:Connect(function()
-			print(tostring(eff.Message.Text))
+		eff.Message.InputBegan:Connect(function(input)
+			if input == Enum.UserInputType.MouseButton1 then
+				print(tostring(eff.Message.Text))
+			end
 		end)
 	end)
 	
@@ -1912,4 +1914,4 @@ local function OGGTP_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(OGGTP_fake_script)()
+coroutine.wrap(ZYNYQ_fake_script)()
