@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function QOEHHKG_fake_script() -- Frame.LocalScript 
+local function HDBCKSB_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1802,8 +1802,8 @@ local function QOEHHKG_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(QOEHHKG_fake_script)()
-local function CERAWTP_fake_script() -- Emoji.Script 
+coroutine.wrap(HDBCKSB_fake_script)()
+local function TUNLU_fake_script() -- Emoji.Script 
 	local script = Instance.new('Script', Emoji)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1818,8 +1818,8 @@ local function CERAWTP_fake_script() -- Emoji.Script
 		end
 		end)
 end
-coroutine.wrap(CERAWTP_fake_script)()
-local function MPBGUK_fake_script() -- List.Script 
+coroutine.wrap(TUNLU_fake_script)()
+local function NEXXC_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1832,8 +1832,8 @@ local function MPBGUK_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(MPBGUK_fake_script)()
-local function TRKJ_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(NEXXC_fake_script)()
+local function KBSSW_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1864,8 +1864,8 @@ local function TRKJ_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(TRKJ_fake_script)()
-local function NUOIQ_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(KBSSW_fake_script)()
+local function FMFUNNO_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1897,22 +1897,22 @@ local function NUOIQ_fake_script() -- Settings_2.AnotherHandler
 	end)
 	
 	
-		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
+	script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
 		eff.Message.InputBegan:Connect(function(input)
-			local UserInputService = game:GetService("UserInputService")
-			if input.UserInputType == Enum.KeyCode.C then
+			if input == Enum.KeyCode.C then
 				setclipboard(tostring(eff.Message.Text))
 			end
 		end)
 	end)
 	
 	
-					
+	
 	
 	script.Parent.Back.MouseButton1Click:Connect(function()
 		script.Parent.Visible = false
 		script.Parent.Parent.Frame.Visible = true
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
+	end
 end
-coroutine.wrap(NUOIQ_fake_script)()
+coroutine.wrap(FMFUNNO_fake_script)()
