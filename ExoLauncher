@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function NERL_fake_script() -- Frame.LocalScript 
+local function ODXDBRY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1807,8 +1807,8 @@ local function NERL_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(NERL_fake_script)()
-local function QBQKOO_fake_script() -- Emoji.Script 
+coroutine.wrap(ODXDBRY_fake_script)()
+local function SNQL_fake_script() -- Emoji.Script 
 	local script = Instance.new('Script', Emoji)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1823,8 +1823,8 @@ local function QBQKOO_fake_script() -- Emoji.Script
 		end
 		end)
 end
-coroutine.wrap(QBQKOO_fake_script)()
-local function ZGUJBQ_fake_script() -- List.Script 
+coroutine.wrap(SNQL_fake_script)()
+local function PGEKN_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1836,8 +1836,8 @@ local function ZGUJBQ_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(ZGUJBQ_fake_script)()
-local function BMSHZ_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(PGEKN_fake_script)()
+local function GGTVIVU_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1868,8 +1868,8 @@ local function BMSHZ_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(BMSHZ_fake_script)()
-local function MBQF_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(GGTVIVU_fake_script)()
+local function XFDNBQ_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1907,10 +1907,10 @@ local function MBQF_fake_script() -- Settings_2.AnotherHandler
 				for _,v in pairs(script.Parent.Parent.Frame.EmojiTab.List:GetChildren()) do
 					if v:IsA("TextButton") then
 					if string.find(eff.Message.Text, v.Text) then
-						print("Cannot be copied since an Emoji is there! Stupid")
+							print("Cannot be copied since an Emoji is there! Stupid")
+							return end
 					else
 							setclipboard(tostring(eff.Message.Text))
-						end
 					end
 				end	
 			end
@@ -1926,4 +1926,4 @@ local function MBQF_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(MBQF_fake_script)()
+coroutine.wrap(XFDNBQ_fake_script)()
