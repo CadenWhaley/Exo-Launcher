@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function ZKGPQ_fake_script() -- Frame.LocalScript 
+local function TVAYIR_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1580,6 +1580,8 @@ local function ZKGPQ_fake_script() -- Frame.LocalScript
 	--Console Setup
 	
 	--Actual MainStuff
+	syn.protect_gui(script.Parent.Parent)
+	
 	local socket;
 	if syn_checkcaller then
 		socket = syn.websocket.connect(b)
@@ -1800,8 +1802,8 @@ local function ZKGPQ_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(ZKGPQ_fake_script)()
-local function RYZCR_fake_script() -- List.Script 
+coroutine.wrap(TVAYIR_fake_script)()
+local function HVLNW_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1813,8 +1815,8 @@ local function RYZCR_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(RYZCR_fake_script)()
-local function QVJGWV_fake_script() -- Emoji_96.Script 
+coroutine.wrap(HVLNW_fake_script)()
+local function CRRQLU_fake_script() -- Emoji_96.Script 
 	local script = Instance.new('Script', Emoji_96)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1829,8 +1831,8 @@ local function QVJGWV_fake_script() -- Emoji_96.Script
 		end
 		end)
 end
-coroutine.wrap(QVJGWV_fake_script)()
-local function GZDSVPD_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(CRRQLU_fake_script)()
+local function OZVB_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1861,8 +1863,8 @@ local function GZDSVPD_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(GZDSVPD_fake_script)()
-local function JAPY_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(OZVB_fake_script)()
+local function NHUEG_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1893,11 +1895,22 @@ local function JAPY_fake_script() -- Settings_2.AnotherHandler
 		end
 	end)
 	
+	local json_encode = function(tbl)
+		local json = game:GetService("HttpService"):JSONEncode(tbl)
+		return json
+	end
+	local json_decode = function(json)
+		local tbl = game:GetService("HttpService"):JSONDecode(json)
+		return tbl
+	end
+	
 	
 		script.Parent.Parent.Frame.MessageHolder.ChildAdded:Connect(function(eff)
 		wait(.1)
 		eff.Message.InputBegan:Connect(function()
-			syn.write_clipboard(eff.Message.Text)
+			local try1 = json_decode(eff.Message.Text)
+			local try2 = json_encode(try1)
+			syn.write_clipboard(try2)
 		end)
 	end)
 	
@@ -1910,4 +1923,4 @@ local function JAPY_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(JAPY_fake_script)()
+coroutine.wrap(NHUEG_fake_script)()
