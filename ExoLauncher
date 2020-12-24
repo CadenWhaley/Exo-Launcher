@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function YJEWYM_fake_script() -- Frame.LocalScript 
+local function CMIARN_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1802,8 +1802,8 @@ local function YJEWYM_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(YJEWYM_fake_script)()
-local function CDCGQHN_fake_script() -- Emoji.Script 
+coroutine.wrap(CMIARN_fake_script)()
+local function TEYEMG_fake_script() -- Emoji.Script 
 	local script = Instance.new('Script', Emoji)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1818,22 +1818,21 @@ local function CDCGQHN_fake_script() -- Emoji.Script
 		end
 		end)
 end
-coroutine.wrap(CDCGQHN_fake_script)()
-local function CJVJJCC_fake_script() -- List.Script 
+coroutine.wrap(TEYEMG_fake_script)()
+local function KJFNJGW_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
 		if v:IsA("GuiButton") then
 		v.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Message.Text = script.Parent.Parent.Parent.Message.Text.. v.Text
-				script.Parent.Parent.Parent.EmojiUsed.Value = true
 			end)
 		end
 	end
 	
 end
-coroutine.wrap(CJVJJCC_fake_script)()
-local function SKRAF_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(KJFNJGW_fake_script)()
+local function FCQOQV_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1864,8 +1863,8 @@ local function SKRAF_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(SKRAF_fake_script)()
-local function OUTQNQO_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(FCQOQV_fake_script)()
+local function EHQA_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1914,4 +1913,4 @@ local function OUTQNQO_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(OUTQNQO_fake_script)()
+coroutine.wrap(EHQA_fake_script)()
