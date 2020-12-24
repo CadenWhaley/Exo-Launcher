@@ -1545,7 +1545,7 @@ Send_Roundify_2px_3.SliceScale = 0.090
 
 -- Scripts:
 
-local function HDBCKSB_fake_script() -- Frame.LocalScript 
+local function YJEWYM_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	Roles = 'MB'
@@ -1802,8 +1802,8 @@ local function HDBCKSB_fake_script() -- Frame.LocalScript
 		script.Parent.EmojiTab.Visible = false
 	end)
 end
-coroutine.wrap(HDBCKSB_fake_script)()
-local function TUNLU_fake_script() -- Emoji.Script 
+coroutine.wrap(YJEWYM_fake_script)()
+local function CDCGQHN_fake_script() -- Emoji.Script 
 	local script = Instance.new('Script', Emoji)
 
 	local Emoji = script.Parent.Parent.EmojiTab
@@ -1818,8 +1818,8 @@ local function TUNLU_fake_script() -- Emoji.Script
 		end
 		end)
 end
-coroutine.wrap(TUNLU_fake_script)()
-local function NEXXC_fake_script() -- List.Script 
+coroutine.wrap(CDCGQHN_fake_script)()
+local function CJVJJCC_fake_script() -- List.Script 
 	local script = Instance.new('Script', List)
 
 	for _,v in pairs(script.Parent:GetDescendants()) do
@@ -1832,8 +1832,8 @@ local function NEXXC_fake_script() -- List.Script
 	end
 	
 end
-coroutine.wrap(NEXXC_fake_script)()
-local function KBSSW_fake_script() -- RainbowTxt.Rainbower 
+coroutine.wrap(CJVJJCC_fake_script)()
+local function SKRAF_fake_script() -- RainbowTxt.Rainbower 
 	local script = Instance.new('LocalScript', RainbowTxt)
 
 	while wait() do
@@ -1864,8 +1864,8 @@ local function KBSSW_fake_script() -- RainbowTxt.Rainbower
 		end
 	end
 end
-coroutine.wrap(KBSSW_fake_script)()
-local function FMFUNNO_fake_script() -- Settings_2.AnotherHandler 
+coroutine.wrap(SKRAF_fake_script)()
+local function OUTQNQO_fake_script() -- Settings_2.AnotherHandler 
 	local script = Instance.new('Script', Settings_2)
 
 	local Status;
@@ -1913,6 +1913,5 @@ local function FMFUNNO_fake_script() -- Settings_2.AnotherHandler
 		script.Parent.Parent.Frame.Visible = true
 		script.Parent.Parent.Frame.EmojiTab.Visible = false
 	end)
-	end
 end
-coroutine.wrap(FMFUNNO_fake_script)()
+coroutine.wrap(OUTQNQO_fake_script)()
