@@ -1,5 +1,5 @@
 # Exo-Launcher
-Exo Launcher is a cross chat Roblox script created by Just a bunny...#1702 -- Do not Judge me lol 
+Exo Launcher is a cross chat Roblox script created by Caden  -- Yes that's my real name.
 
 
 Here's the shitty discord server:
